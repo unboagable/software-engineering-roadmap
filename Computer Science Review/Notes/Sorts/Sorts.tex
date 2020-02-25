@@ -1,0 +1,158 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Sorts Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Sorts} \\
+\end{center}
+
+\question{Parameters}
+
+\begin{itemize}
+\item inplace
+\item stability-maintain relative order for "equal" keys
+\end{itemize}
+
+\question{Accolades}
+
+\begin{itemize}
+\item Simplest-selection
+\item Efficient-MergeSort
+\item insertion best n average $n^2$ worst $n^2$
+\item selection best $n^2$ average $n^2$ worst $n^2$
+\item merge best $nlog n$ average $nlog n$ worst $nlog n$
+\item heap best $nlog n$ average $nlog n$ worst $nlog n$
+\item quick best $nlog n$ average $nlog n$ worst $n^2$
+\end{itemize}
+
+\question{Classifications}
+
+\begin{itemize}
+\item Simple (insertion, selection)
+\item Efficient (Merge, Heap, quick)
+\item Bubble
+\item Distribution (bucket)
+\item Exchange sorts (bubble sort, quicksort)
+\item Selection sorts (shaker sort, heapsort)
+\end{itemize}
+
+\question{insertion}
+
+\begin{itemize}
+\item take one element at a time insert into place in another list
+\item first element
+\item 2nd after or before first
+\item 3rd in between after or before
+\end{itemize}
+
+
+\question{Selectionsort}
+
+\begin{itemize}
+\item look for smallest, place
+\item next smallest, place
+\end{itemize}
+
+\question{Quickort}
+
+\begin{itemize}
+\item Pick an element, called a pivot, from the array.
+\item Reorder the array so that all elements with values less than the pivot come before the pivot, all elements with values greater than the pivot come after it (equal values can go either way)
+\item Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values
+\end{itemize}
+
+\question{merge}
+
+\begin{itemize}
+\item Divide into two lists
+\item Recursively sort 2 lists
+\item merge two lists (add in least of both comparing them first)
+\end{itemize}
+
+\question{bucketsort}
+
+\begin{itemize}
+\item Create buckets by range (0-9,10-19,20-29,etc)
+\item Separate into different buckets
+\item Sort buckets (using either bucketsort, quicksort, what-ever)
+\end{itemize}
+
+\question{heapsort}
+
+\begin{itemize}
+\item Create heap of all elements
+\item Keep removing max (min) from heap to place into sorted array
+\end{itemize}
+
+\question{bubblesort}
+
+\begin{itemize}
+\item iterate through array swapping consecutive elements if in the wrong order
+\item run until an interation with no swaps
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{http://betterexplained.com/articles/sorting-algorithms/}
+\item \url{https://en.wikipedia.org/wiki/Sorting_algorithm}
+\end{itemize}
+
+\end{document}
+
