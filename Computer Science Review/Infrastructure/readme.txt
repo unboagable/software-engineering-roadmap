@@ -1,2 +1,2 @@
-Software to manipulate latex
+LaTeX Editors
 
