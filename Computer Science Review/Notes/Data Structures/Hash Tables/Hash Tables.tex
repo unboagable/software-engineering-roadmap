@@ -1,0 +1,126 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Hash Table Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Hash Tables} \\
+\end{center}
+
+\question{Big O}
+
+\begin{itemize}
+  \item space O(n)
+  \item time
+\begin{itemize}
+  \item search worst O(n), average O(1)
+  \item insert worst O(n), average O(1)
+  \item delete worst O(n), average O(1)
+\end{itemize}
+\end{itemize}
+
+\question{Advantages}
+
+\begin{itemize}
+  \item faster than other structures on large entries
+  \item efficient when max entries known (dont have to resize)
+\end{itemize}
+
+\question{Disadvantages}
+
+\begin{itemize}
+  \item have to resize for more data
+\end{itemize}
+
+\question{Uses}
+
+\begin{itemize}
+  \item associative arrays (arrays index through arbitrary strings)
+  \item database indexing
+  \item caches
+  \item sets (?)
+  \item object rep (key is method or object, value is pointer to member or method)
+\end{itemize}
+
+\question{Properties}
+
+\begin{itemize}
+  \item keys have to be hash able (able to compute numeric value from it)
+  \item entries in no particular order
+\end{itemize}
+
+\question{Creating a Hash Table}
+
+\begin{lstlisting}
+public HashMap<Integer, Student> buildMap(Student[] students) {
+	HashMap<Integer, Student> map = new HashMap<Integer, Student>();
+	for (Student s : students) map.put(s.getId(), s);
+	return map;
+}
+\end{lstlisting}
+
+\question{Notes}
+
+\begin{itemize}
+  \item Alternative to array to implement stack and queue
+  \item Allows any length
+  \item can be made more efficient with better fit hash function
+\end{itemize}
+
+\end{document}
+

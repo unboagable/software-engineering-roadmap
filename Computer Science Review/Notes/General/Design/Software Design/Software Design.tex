@@ -1,0 +1,149 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Software Design Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Software Design} \\
+\end{center}
+
+\question{Software design and complexity}
+	
+\begin{itemize}
+\item scale
+\item environment (I/O, Network)
+\item infrastructure (libraries, frameworks)
+\item evolution (design for change)
+\item correctness (testing, analysis tools, automation)
+\end{itemize}
+
+\question{software qualities}
+
+\begin{itemize}
+\item sufficiency/func correctness
+\item robustness
+\item flexibility
+\item reusability
+\item efficiency
+\item scalability
+\item security
+\end{itemize}
+
+\question{A simple process}
+
+\begin{itemize}
+\item Discuss the software that needs to be written
+\item Write some code
+\item Test the code to identify the defects
+\item Debug to find causes of defects
+\item Fix the defects
+\item If not done, return to first step
+\end{itemize}
+
+\question{design tips}
+
+\begin{itemize}
+\item Think before coding
+\item Consider quality attributes (maintainability,extensibility, performance)
+\item Consider alternatives and make conscious design decisions
+\end{itemize}
+
+\question{Preview: The design process}
+
+\begin{itemize}
+\item Object‐Oriented Analysis
+\begin{itemize}
+\item Understand the problem
+\item Identify the key concepts and their relationships
+\item Build a (visual) vocabulary
+\item Create a domain model (aka conceptual model)
+\end{itemize}
+\item Object‐Oriented Design
+\begin{itemize}
+\item Identify software classes and their relationships with class diagrams
+\item Assign responsibilities (attributes, methods)
+\item Explore behavior with interaction diagrams
+\item Explore design alternatives
+\item Create an object model (aka design model and design class diagram) and interaction models
+\end{itemize}
+\item Implementation
+\begin{itemize}
+\item Map designs to code, implementing classes and methods
+\end{itemize}
+\end{itemize}
+
+\question{Objects}
+
+\begin{itemize}
+\item A package of state (data) and behavior (actions)
+\item Can interact with objects by sending messages
+\begin{itemize}
+\item perform an action (e.g., move)
+\item request some information (e.g., getSize)
+\end{itemize}
+\item Possible messages described through an interface
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{http://www.cs.cmu.edu/~charlie/courses/15-214/2015-fall/index.html#schedule}
+\end{itemize}
+
+\end{document}
+

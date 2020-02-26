@@ -1,0 +1,206 @@
+% Start Header
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\newcommand\Myperm[2][n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2][n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\def\code#1{\texttt{#1}}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+% End Header
+
+\newcommand{\myhwnum}{APIs notes}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large APIs} \\
+\end{center}
+
+\question{Summary}
+
+\begin{itemize}
+  \item \code{Math..exact}
+  \begin{itemize}
+    \item for arithmetic overflow
+  \end{itemize}
+  \item Iterator
+  \item Scanner
+  \item String
+  \item StringBuilderr
+  \item Set (HashSet)
+  \item List (Arraylist)
+  \item LinkedList
+  \item Stack
+  \item Queue (LinkedList, PriorityQueue)
+  \item PriorityQueue
+  \item Map (HashMap)
+\end{itemize}
+
+\question{Iterator}
+
+\begin{itemize}
+\item hasnext
+\item next
+\item remove
+\end{itemize}
+
+\question{Scanner}
+
+\begin{itemize}
+\item findinline(Pattern)
+\item hasNext..int,byte,pattern()
+\item next...Int
+\end{itemize}
+
+\question{String}
+
+\begin{itemize}
+\item charAt
+\item codePointCount(int begin,int end) returns unicode(ASCII) points within range
+\item valueOf
+\item toLowercase()
+\end{itemize}
+
+\question{StringBuilder}
+
+\begin{itemize}
+\item append()..int,char,etc.
+\item charAt
+\item insert(int i, char,int, string...)
+\item toString
+\end{itemize}
+
+\question{Set(Hashset)}
+
+\begin{itemize}
+\item add
+\item clear
+\item clone
+\item contains
+\item isEmpty
+\item iterator
+\item remove
+\item size
+\end{itemize}
+
+\question{List (ArrayList)}
+
+\begin{itemize}
+\item add(E e),(int ind, E e)
+\item clear
+\item get(int x)
+\item indexOf
+\item set(int ind, E e)
+\item remove
+\end{itemize}
+
+\question{LinkedList (LinkedList)}
+
+\begin{itemize}
+\item add(E e),(int i, E e)
+\item addFirst
+\item addLast
+\item get(int i)
+\item peek
+\item remove
+\item set
+\end{itemize}
+
+\question{Stack (Stack)}
+
+\begin{itemize}
+\item empty()
+\item peek
+\item pop
+\item push
+\item search(E e)
+\end{itemize}
+
+\question{Queue (LinkedList, PriorityQueue)}
+
+\begin{itemize}
+\item Interface with multiple implementations
+\end{itemize}
+
+\question{PriorityQueue (Binary Heap)}
+
+\begin{itemize}
+\item add(E e)
+\item iterator
+\item poll()
+\item peek()
+\end{itemize}
+
+\question{Map (HashMap)}
+
+\begin{itemize}
+\item put
+\item size
+\item get
+\item contains
+\end{itemize}
+
+
+\question{Comparator}
+
+\begin{itemize}
+\item \code{implements Comparator<T>}
+\item override compare method
+\end{itemize}
+
+\end{document}
+

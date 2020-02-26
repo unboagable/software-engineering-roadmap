@@ -1,0 +1,210 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Design for Reuse notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Design for Reuse} \\
+\end{center}
+
+\question{Delegation}
+
+\begin{itemize}
+  \item Delegation is	simply when one	object relies on another object for some subset	of its functonality
+\begin{itemize}
+  \item Sorter is delegating functonality to	some Comparator implementation
+\end{itemize}
+  \item Judicious delegation enables code reuse
+\begin{itemize}
+  \item Sorter can be reused with arbitrary sort orders
+  \item Comparators can be reused with arbitrary client code that needs to compare integers
+\end{itemize}
+\end{itemize}
+
+\question{Delegation and design}
+
+\begin{itemize}
+  \item Small interfaces
+  \item Classes to encapsulate algorithms
+\begin{itemize}
+  \item ex: the Comparator, the Strategy pattern
+\end{itemize}
+\end{itemize}
+
+\question{Inheritance}
+
+\begin{itemize}
+  \item Typical roles:
+\begin{itemize}
+  \item An interface defines	expectations/commitment for clients
+  \item An abstract class is a convenient hybrid between an interface and a full implementation
+  \item A subclass overrides a method definition to specialize its implementation
+\end{itemize}
+\end{itemize}
+
+\question{Benefits of Inheritance}
+
+\begin{itemize}
+  \item Reuse	of code
+  \item Modeling flexibility
+  \item A Java aside:
+\begin{itemize}
+  \item Each class can directly extend only one parent class
+  \item A class can implement multiple interfaces
+\end{itemize}
+\end{itemize}
+
+\question{Power of object oriented interfaces}
+
+\begin{itemize}
+  \item Subtype polymorphism
+\begin{itemize}
+  \item Different kinds of objects can be treated	uniformly by client code
+\end{itemize}
+  \item e.g.,	a list of all accounts
+\begin{itemize}
+  \item Each object behaves according to its type
+\end{itemize}
+  \item If you add new kind of account, client code does not change
+\end{itemize}
+
+\question{Inheritance and subtyping}
+
+\begin{itemize}
+  \item Inheritance is for code reuse
+\begin{itemize}
+  \item Write	code once and only once
+  \item Superclass features implicitly available in subclass
+\end{itemize}
+  \item Subtyping is for polymorphism
+\begin{itemize}
+  \item Accessing objects the same way, but getting different behavior	
+  \item Subtype is substitutable for supertype
+\end{itemize}
+\end{itemize}
+
+\question{Java details: final}
+
+\begin{itemize}
+  \item A final field: prevents reassignment to the field after initialization
+  \item A final method: prevents overriding the method
+  \item A final class: prevents extending the class
+\begin{itemize}
+  \item e.g., public final class CheckingAccountImpl
+\end{itemize}
+\end{itemize}
+
+\question{Type Casting}
+
+\begin{itemize}
+  \item Sometimes you wan a different type than what you have
+\begin{itemize}
+  \item ex: float pi=3.14; int indianapi=(int) pi;
+\end{itemize}
+  \item Useful if you have more specific subtype
+  \item Advice: avoid downcasting types
+\begin{itemize}
+  \item Never downcast within superclass to a subclass
+\end{itemize}
+\end{itemize}
+
+\question{Behavioral Subtyping}
+
+\begin{itemize}
+  \item Compiler enforced rules in Java:
+\begin{itemize}
+  \item Subtype (subclass, subinterface, object implementing interface) can add but not remove methods
+  \item Overriding method must return same type or subtype
+  \item Overriding method must accept same parameter types
+  \item Overriding method may not throw additional exceptions
+  \item Concrete class must  implement all undefined interface methods and abstract methods
+\end{itemize}
+  \item A subclass must fulfill all contracts its superclass does:
+\begin{itemize}
+  \item same or strong invariants
+  \item same or stronger post  \item conds for all methods
+  \item same or weaker pre  \item conds for all methods
+\end{itemize}
+\end{itemize}
+
+\question{Parametric polymorphism via java generics}
+
+\begin{itemize}
+  \item Parametric polumorphism is the ability to define a type generically to allow static type  \item checking with out fully specifying types
+  \item The java.util.Stack instead
+\begin{itemize}
+  \item A stack of some type T:
+\begin{lstlisting}
+public class Stack<T> {
+	public void push(T obj){...}
+	public T pop() { ...}
+}
+\end{lstlisting}
+\end{itemize}
+  \item Improves typechecking, simplifies client code
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item Template method design pattern
+  \item Decorator design pattern
+\end{itemize}
+
+\end{document}
+

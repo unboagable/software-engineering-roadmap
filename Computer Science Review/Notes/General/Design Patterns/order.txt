@@ -1,0 +1,4 @@
+General
+Creation
+Structural
+Behavioral

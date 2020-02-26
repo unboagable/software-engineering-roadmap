@@ -1,0 +1,223 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Design for Robustness notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Design for Robustness} \\
+\end{center}
+
+\question{Exceptions}
+
+\begin{itemize}
+  \item Notify caller of exceptional circumstance (usually operational failure)
+  \item Semantics
+\begin{itemize}
+  \item An exception propagates up the function  \item call stack until main() is reached (terminates program) or until the exception is caught
+\end{itemize}
+  \item Sources of exceptions:
+\begin{itemize}
+  \item Program throwing an exception
+  \item Exception thrown by the Java Virtual Machine
+\end{itemize}
+\end{itemize}
+
+\question{Java: Finally}
+
+The finally block always runs after try/catch
+
+\question{Design choice: checked and unchecked}
+
+\begin{itemize}
+  \item Unchecked exception: any subclass of RuntimeException
+\begin{itemize}
+  \item Error which is highly unlikely and/or unrecoverable
+\end{itemize}
+  \item check exception: any subclass of Exception that is not a subclass of RuntimeException
+\begin{itemize}
+  \item Error that every caller should be aware of and explicitly decide to handle or pass on
+\end{itemize}
+  \item Return values(  - 1, false, null): If failure is common and expected possibility
+\end{itemize}
+
+\question{Creating and throwing your own exceptions}
+
+\begin{itemize}
+  \item Methods must declare any checked exceptions they might throw
+  \item If your class extends java.lang.Throwable you can throw it:
+\begin{itemize}
+  \item
+\begin{lstlisting}
+ if (some__){
+	throw new customException("Blah blah");
+  }
+\end{lstlisting}
+\end{itemize}
+\end{itemize}
+
+\question{Benefits of exceptions}
+
+\begin{itemize}
+  \item High level summary of error and stack trace
+\begin{itemize}
+  \item Compare: core dumped in C
+\end{itemize}
+  \item Can't forget to handle common failure modes
+\begin{itemize}
+  \item Compare: using a flag or special return value
+\end{itemize}
+  \item Can optionally recover from failure
+\begin{itemize}
+  \item Compare: calling System.exit()
+\end{itemize}
+  \item Improve code structure
+\begin{itemize}
+  \item   \item Separate routine operations from error  \item handling
+\end{itemize}
+  \item Allow consisten clean  \item up in both normal and exceptional operation
+\end{itemize}
+
+\question{Guide for exceptions}
+
+\begin{itemize}
+  \item Catch and handle all checked exceptions
+\begin{itemize}
+  \item Unless there is no good way
+\end{itemize}
+  \item Use runtime exceptions for programming error
+  \item Other
+\begin{itemize}
+  \item Don't catch an exception without (at least somewhat) handling the error
+  \item When you throw an exception describe the error
+  \item if you re  \item throw an exception, always include the original exception as the clause
+\end{itemize}
+\end{itemize}
+
+\question{Modular Protection}
+
+\begin{itemize}
+  \item Errors and bugs unavoidable but exceptions should not leak across modules (methods, classes) if possible
+  \item Good modules handles exceptional conditions locally
+\begin{itemize}
+  \item Local input validation and local exception handling where possible
+  \item Explicit interfaces with clear pre/post conditions
+\end{itemize}
+  \item Explicitly documented and checked exceptions where exceptional conditions may propagate between modules
+\begin{itemize}
+  \item Information hiding -encapsulation of critical code (likely bugs, likely exceptions)
+\end{itemize}
+\end{itemize}
+
+\question{Problems when testing (sub - )systems}
+
+\begin{itemize}
+  \item User interfaces and user interactions
+\begin{itemize}
+  \item Users click buttons, interpret output
+  \item Waiting/timing issues
+\end{itemize}
+  \item Test data vs. real data
+  \item Testing against big infrastructure (database, web services,..)
+  \item Testing with side effects (e.g. printing and mailing documents)
+  \item Nondeterministic behavior
+  \item Concurrency
+\end{itemize}
+
+\question{Testing strategies in environments}
+
+\begin{itemize}
+  \item Separate business logic and data representation from GUI for testing
+  \item Test algorithms locally without large environment using stubs
+  \item Advantage of stubs
+\begin{itemize}
+  \item Create deterministic response
+  \item Can reliably simulate spurious states (network error)
+  \item Can speed up test execution
+  \item Can simulate functionality not yet implemented
+\end{itemize}
+  \item Automate
+\end{itemize}
+
+\question{Scaffolding}
+
+\begin{itemize}
+  \item Catch bugs early: Before client code or service available
+  \item Limit scope of debugging: Localize errors
+  \item Improve coverage
+\begin{itemize}
+  \item System level tests may only cover 70% of code
+  \item Simulate unusual error conditions
+\end{itemize}
+  \item Validate internal interface/API designs
+\begin{itemize}
+  \item Simulate clients in advance of their developement
+  \item Simulate services in advance of their development
+\end{itemize}
+  \item Capture developer intent (in absence of specification documentation)
+\begin{itemize}
+  \item A test suite formally captures elements of design intent
+  \item Developer documentation
+\end{itemize}
+  \item Improve low  \item level design
+\begin{itemize}
+  \item Early attention to ability to test
+\end{itemize}
+\end{itemize}
+
+\end{document}
+

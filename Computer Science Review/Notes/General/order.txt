@@ -1,0 +1,3 @@
+general tips
+design
+design patterns

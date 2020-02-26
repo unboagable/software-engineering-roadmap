@@ -1,0 +1,214 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\def\code#1{\texttt{#1}}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Concurrency notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Concurrency} \\
+\end{center}
+
+\question{General}
+
+\begin{itemize}
+  \item concurrency refers to the general concept of a system with multiple, simultaneous activities
+  \item parallelism refers to the use of concurrency to make a system run faster
+\end{itemize}
+
+\question{Resources}
+
+\begin{itemize}
+  \item each thread has its own stack
+  \item threads in a process share heap
+\end{itemize}
+
+\question{Approaches}
+
+\begin{itemize}
+  \item hyperthreading (thread level concurrency)
+  \begin{itemize}
+    \item multiple copies of some of the CPU hardware (program counters,register files) while having only single copies of other parts (units that perform floating-point arithmetic)
+    \item decides which thread to run on a cycle by cycle basis
+  \end{itemize}
+  \item instruction-level parallelism: modern processors can execute multiple instructions at one time
+  \item Application level concurrency
+  \begin{itemize}
+    \item Benefits
+    \begin{itemize}
+      \item overlap useful work with I/O requests
+      \item separate concurrent logic flow for interactions with humans (resize window)
+      \item reducing latency by defering work (in Dynamic Storage allocator defer coalescing to concurrent flow at lower priority in CPU spare time)
+      \item separate logic flows for each client
+      \item partitioned applications with concurrent flows run better on multiprocessor
+    \end{itemize}
+    \item Methods
+    \begin{itemize}
+      \item processes
+      \begin{itemize}
+        \item each logic control flow scheduled and maintained by kernel
+        \item separate virtual address spaces
+        \item need explicit interprocess communication (IPC) mechanism to communicate
+      \end{itemize}
+      \item I/O multiplexing
+      \begin{itemize}
+        \item applications explicitly schedule their own logical flows in the context of a single process
+        \item Logical flows are modeled as state machines that the main program explicitly transitions from state to state as a result of data arriving on file descriptors
+        \item all flows share the same address space
+      \end{itemize}
+      \item threads
+      \begin{itemize}
+        \item run in the context of a single process and are scheduled by the kernel
+        \item hybrid of the other two approaches
+        \item   \item scheduled by the kernel like process flows
+        \item   \item sharing the same virtual address space like I/O multiplexing flows
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\question{Tools for sharing}
+
+\begin{itemize}
+  \item lock: allows only one thread to enter the part that's locked and the lock is not shared with any other processes
+  \item Mutex Used to provide mutual exclusion 
+  \begin{itemize}
+    \item ensures at most one process can do something (like execute a section of code, or access a variable) at a time
+    \item A famous analogy is the bathroom key in a Starbucks
+    \begin{itemize}
+      \item only one person can acquire it, therefore only that one person may enter and use the bathroom
+      \item Everybody else who wants to use the bathroom has to wait till the key is available again
+    \end{itemize}
+  \end{itemize}
+  \item Monitor: object designed to be accessed from multiple threads
+  \begin{itemize}
+    \item member functions or methods of a monitor object will enforce mutual exclusion, so only one thread may be performing any action on the object at a given time
+    \item if one thread is currently executing a member function of the object then any other thread that tries to call a member function of that object will have to wait until the first has finished
+    \item no part of the instance can be touched by more than one process at a time
+    \item A monitor is like a public toilet
+    \begin{itemize}
+      \item Only one person can enter at a time
+      \item They lock the door to prevent anyone else coming in, do their stuff, and then unlock it when they leave
+    \end{itemize}
+  \end{itemize}
+  \item Semaphore: lower-level object
+  \begin{itemize}
+    \item P() and V()functions
+    \item You might well use a semaphore to implement a monitor
+    \item A semaphore essentially is just a counter
+    \begin{itemize}
+      \item When the counter is positive, if a thread tries to acquire the semaphore then it is allowed, and the counter is decremented
+      \item When a thread is done then it releases the semaphore, and increments the counter
+    \end{itemize}
+    \item Semaphores are typically used as a signaling mechanism between processes
+    \item A semaphore is like a bike hire place
+    \begin{itemize}
+      \item They have a certain number of bikes
+      \item If you try and hire a bike and they have one free then you can take it, otherwise you must wait
+      \item When someone returns their bike then someone else can take it
+      \item If you have a bike then you can give it to someone else to return, the bike hire place doesn't care who returns it, as long as they get their bike back
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\question{Issues}
+
+\begin{itemize}
+  \item Deadlock is a condition in which a task waits indefinitely for conditions that can never be satisfied
+  \begin{itemize}
+    \item task claims exclusive control over shared resources 
+    \item task holds resources while waiting for other resources to be released tasks cannot be forced to relinguish resources a circular waiting condition exists
+  \end{itemize}
+  \item Livelock conditions can arise when two or more tasks depend on and use the some resource causing a circular dependency condition where those tasks continue running forever
+  \begin{itemize}
+    \item this blocks all lower priority level tasks from running (these lower priority tasks experience a condition called starvation)
+    \item A real world example of livelock occurs when two people meet in a narrow corridor, and each tries to be polite by moving aside to let the other pass, but they end up swaying from side to side without making any progress because they both repeatedly move the same way at the same time
+  \end{itemize}
+\end{itemize}
+
+\question{Implementing in Java}
+
+\begin{itemize}
+  \item extend Thread
+  \begin{itemize}
+    \item can't extend any more classes
+    \item write run() function with what ever you want thread to do
+    \begin{itemize}
+      \item thread.start() starts new thread (calls run within start)
+      \item thread.run() will run
+    \end{itemize}
+  \end{itemize}
+  \item implement runnable
+  \begin{itemize}
+    \item can implement more interfaces
+    \item write run() function with what ever you want thread to do and create thread with runnable in constructor
+  \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item Computer Systems: A Programmers Perspective
+\item \url{https://www.quora.com/Semaphore-vs-mutex-vs-monitor-What-are-the-differences}
+\item \url{http://stackoverflow.com/questions/7335950/semaphore-vs-monitors-whats-the-difference}
+\item \url{http://stackoverflow.com/questions/2332765/lock-mutex-semaphore-whats-the-difference}
+\item \url{http://javarevisited.blogspot.com/2014/07/top-50-java-multithreading-interview-questions-answers.html}
+\end{itemize}
+
+\end{document}
+

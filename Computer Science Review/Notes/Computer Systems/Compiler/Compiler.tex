@@ -1,0 +1,95 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Compiler notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Compiler} \\
+\end{center}
+
+\question{Compilation system}
+
+\begin{itemize}
+  \item hello.c (source program, text)
+  \item hello.i (modified source program, text) preprocessor (cpp)
+  \begin{itemize}
+    \item modifies according to $\#$ directives ($\#$include$\textless$stdio.h$\textgreater$)
+  \end{itemize}
+  \item hello.s (assembly program, text) compiler (cc1)
+  \begin{itemize}
+    \item assembly  \item language program (statement equals 1 low level machine language instruction)
+    \item assembly language common compiler output for different high level languages
+  \end{itemize}
+  \item hello.o (relocatable object programs, binary) assembler (as)
+  \begin{itemize}
+    \item to binary file (relocatable object program) whose bytes encode machine language instructions
+  \end{itemize}
+  \item hello (executable object program, binary) linker (ld) (linked with printf.o)
+  \begin{itemize}
+    \item linker merges standard c library functions (executable object file)
+  \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item Computer Systems: A Programmers Perspective pg 4-7
+\end{itemize}
+
+\end{document}
+

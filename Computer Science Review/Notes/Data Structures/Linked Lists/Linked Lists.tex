@@ -1,0 +1,145 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Linked Lists Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Linked Lists} \\
+\end{center}
+
+\question{Big O}
+
+\begin{itemize}
+  \item space O(n)
+  \item time
+\begin{itemize}
+  \item search worst O(n), average O(n)
+  \item insert worst O(1), average O(1)
+  \item delete worst O(1), average O(1)
+\end{itemize}
+\end{itemize}
+
+\question{Advantages}
+
+\begin{itemize}
+  \item Linked lists are a dynamic data structure, allocating the needed memory while the program is running
+  \item Insertion and deletion node operations are easily implemented in a linked list
+  \item Linear data structures such as stacks and queues are easily executed with a linked list
+  \item They can reduce access time and may expand in real time without memory overhead
+\end{itemize}
+
+\question{Disadvantages}
+
+\begin{itemize}
+  \item They have a tendency to use more memory due to pointers requiring extra storage space
+  \item Nodes in a linked list must be read in order from the beginning as linked lists are inherently sequential access
+  \item Nodes are stored incontiguously, greatly increasing the time required to access individual elements within the list
+  \item Difficulties arise in linked lists when it comes to reverse traversing. For instance, singly linked lists are cumbersome to navigate backwards[1] and while doubly linked lists are somewhat easier to read, memory is wasted in allocating space for a back pointer
+\end{itemize}
+
+\question{Uses}
+
+\begin{itemize}
+  \item Stack
+  \item Queue
+  \item Memory Allocation
+\end{itemize}
+
+\question{Creating a Linked List}
+
+\begin{lstlisting}
+class Node {
+	Node next = null;
+	int data;
+	public Node(int d) { data = d; }
+	void appendToTail(int d) {
+		Node end = new Node(d);
+		Node n = this;
+		while (n.next != null) { n = n.next; }
+		n.next = end;
+	}
+}
+\end{lstlisting}
+
+\question{Deleting a node}
+
+\begin{lstlisting}
+Node deleteNode(Node head, int d) {
+	Node n = head;
+	if (n.data == d) {
+		return head.next; /* moved head */
+	}
+	while (n.next != null) {
+		if (n.next.data == d) {
+			n.next = n.next.next;
+			return head; /* head didn’t change */
+		}
+		n = n.next;
+	}
+}
+\end{lstlisting}
+
+\question{Notes}
+
+\begin{itemize}
+  \item Alternative to array to implement stack and queue
+  \item Allows any length
+\end{itemize}
+
+\end{document}
+

@@ -1,0 +1,181 @@
+% Start Header
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\newcommand\Myperm[2][n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2][n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\def\code#1{\texttt{#1}}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+% End Header
+
+\newcommand{\myhwnum}{Distributed Systems Notes}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Distributed Systems}
+\end{center}
+
+\question{General}
+
+\begin{itemize}
+  \item organizing resources via network with more latency, less bandwidth, and higher error rate
+  \item Vs parallel systems
+  \begin{itemize}
+    \item Distributed has multiple (distributed users) vs parallel designed for single user or user process
+    \item Parallel has less security issues
+    \item Distributed Systems: cooperative work environment, Parallel Systems: environment designed to provide the maximum parallelization and speed-up for a single task
+  \end{itemize}
+\end{itemize}
+
+\question{Definitions}
+
+\begin{itemize}
+  \item task: collection of resources configured to solve a particular problem
+  \begin{itemize}
+    \item contains not only the open files and communication channels, but also the threads (a.k.a. processes)
+    \item a task is a factory, all of the means of production scattered across many assembly lines
+  \end{itemize}
+\end{itemize}
+
+\question{Migrating}
+
+\begin{itemize}
+  \item Migrating Computation
+  \begin{itemize}
+    \item need to move resources (memory, files)
+    \item move state of interaction with resources
+    \item need to restore communication (other side need to know new location)
+  \end{itemize}
+  \item Migrating File State
+  \begin{itemize}
+    \item keep track of the essential file state within the process and be ready to recreate it
+      \item migration system guarantees that higher  \item level file operations are atomic, operation opens the file, seeks as needed, performs a read or write, and then closes the file
+      \item or maintain the same file state, but only reopen the file when needed
+  \end{itemize}
+  \item Migrating Communication Sessions
+  \begin{itemize}
+    \item need to reestablish and map gloabl state, such as network sockets
+    \item higher level network name
+    \item edge cases, such as what happens when a process move mid  \item transmission
+  \end{itemize}
+\end{itemize}
+
+\question{Networking}
+
+\begin{itemize}
+  \item LAN:  Local Area Network a homeogeneous network
+  \begin{itemize}
+    \item to communicate broadcast (yell) and all stations hear the broadcast
+    \item station have station id or LAN Address and messages have sender and reciever id
+    \begin{itemize}
+      \item everyone can hear other stations messages but ignore it unless diagnostic or malicious
+    \end{itemize}
+    \item size is self-limiting
+    \begin{itemize}
+      \item longer wire the weaker the signal
+      \item greater the distance through the air the weaker the signal
+      \item network can be clogged with collision, can collapse with utilization as low as 30%
+    \end{itemize}
+  \end{itemize}
+  \item bridge
+  \begin{itemize}
+    \item connect LANs
+    \item send message for station only to relevant LAN (hashtable)
+    \item bridge managed so if station changes LAN
+    \item bridges (through configuration) create a spanning tree of location to prevent cycles
+    \begin{itemize}
+      \item if bridge fails form a different tree to get around failure
+    \end{itemize}
+    \item can't create bridges for the whole planet
+  \end{itemize}
+  \item IP Address
+  \begin{itemize}
+    \item IP4
+    \begin{itemize}
+      \item Class A (huge): 8 bits(nework) + 24 bits (host) address begin with 0
+      \item Class B (big): 16 bits(nework) + 16 bits (host) address begin with 10
+      \item Class C (small): 24 bits(nework) + 8 bits (host) addess begin with 110
+    \end{itemize}
+    \item IP6
+    \begin{itemize}
+      \item Classless, first few bits to describe the network/host division
+      \item 73.93.0.0/15
+      \begin{itemize}
+        \item address with 15 network bits and 17 host bits
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\question{incomplete}
+
+\begin{itemize}
+    \item Dynamic Host Configuration Protocol (DHCP) allows IP addresses to be assiged on a temporary or quasi-permant basis
+    \begin{itemize}
+      \item DHCP is great for clients -- but not for servers: Servers need to have well-known addresses
+    \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{http://www.andrew.cmu.edu/course/15-440-f14/index/lecture_index.html}
+\end{itemize}
+
+\end{document}
+

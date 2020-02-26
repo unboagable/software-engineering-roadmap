@@ -1,0 +1,200 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myandrew}{cmungai@andrew.cmu.edu}
+\newcommand{\myhwnum}{Design for Change notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Design for Change} \\
+\end{center}
+
+\question{Design principle for change: information hiding}
+
+\begin{itemize}
+\item expose little implementation as possible
+\item allows you to change hidden details later
+\end{itemize}
+
+\question{Subtype Polymorphism}
+
+\begin{itemize}
+  \item There may be multiple implementations of an interface
+  \item Multiple implementations coexist in the same program
+  \item May not even be distinguishable
+  \item Every object has its own data and behavior
+\end{itemize}
+
+\question{Interface}
+
+\begin{itemize}
+  \item can implement start (defining required methods and classes)
+  \item create class to implement interface
+\end{itemize}
+
+\question{What to test}
+
+\begin{itemize}
+  \item Functional correctness of a method (e.g.,computations, contracts)
+  \item Functional correctness of a class (e.g., class invariants)
+  \item Behavior of a class in a subsystem/multiple subsystems/the entire system
+  \item Behavior when interacting with the world
+\begin{itemize}
+  \item Interacting with files, networks, sensors, …
+  \item Erroneous states
+  \item Nondeterminism, Parallelism
+  \item Interaction with users
+\end{itemize}
+  \item Other qualities (performance, robustness, usability, security, …)
+\end{itemize}
+
+\question{Unit Tests (Junit good for JAVA)}
+
+\begin{itemize}
+  \item Unit tests for small units: functions, classes, subsystems
+\begin{itemize}
+  \item Smallest testable part of a system
+  \item Test parts before assembling them
+  \item Intended to catch local bugs
+\end{itemize}
+  \item Typically written by developers
+  \item Many small, fast‐running, independent tests
+  \item Little dependencies on other system parts or environment
+  \item Insufficient but a good starting point
+  \item extra benefits:
+\begin{itemize}
+  \item Documentation (executable specification)
+  \item Design mechanism (design for testability)
+\end{itemize}
+\end{itemize}
+
+\question{Test cases strategies}
+
+\begin{itemize}
+  \item use specs
+  \item representative cases
+  \item invalid cases
+  \item boundary cond
+  \item think like attacker
+  \item dificult cases
+\end{itemize}
+
+\question{static methods}
+
+\begin{itemize}
+  \item Static methods belong to a class
+  \item global
+  \item Direct dispatch, no subtype polymorphism
+  \item Avoid unless really only a single implementation exists (e.g., Math.min)
+\end{itemize}
+
+\question{Best practices}
+
+\begin{itemize}
+  \item control access
+\begin{itemize}
+  \item fields not accessible from client code
+  \item methods only accessible in exposed interface
+\end{itemize}
+  \item contracts - agreement between provider and user
+\begin{itemize}
+  \item interface specification
+  \item functionality and correctness expectations
+  \item Performance expectations
+\end{itemize}
+  \item Visibility Modifiers
+\begin{itemize}
+  \item design principle for change: information hiding
+  \item expose little implementation as possible
+  \item allows you to change hidden details later
+\end{itemize}
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item try to avoid setters
+  \item Organize program functionality around kinds of abstract “objects”
+\begin{itemize}
+  \item For each object kind, offer a specific set of operations on the objects
+  \item Objects are otherwise opaque: Details of representation are hidden
+  \item “Messages to the receiving object”
+\end{itemize}
+  \item Distinguish interface from class
+\begin{itemize}
+  \item Interface: expectations
+  \item Class: delivery on expectations (the implementation)
+  \item Anonymous class: special Java construct to create objects without explicit classes: Point x = new Point() { /* implementation */ };
+\end{itemize}
+  \item Explicitly represent the taxonomy of object types
+\begin{itemize}
+  \item This is the type hierarchy (!= inheritance, more on that later): A CartesianPoint is a Point
+\end{itemize}
+  \item Design Patterns!!
+\begin{itemize}
+  \item Design Patterns by Gamma,Helm,Johnson,Vlissides
+\end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{http://www.cs.cmu.edu/~charlie/courses/15-214/2015-fall/index.html#schedule}
+\end{itemize}
+
+\end{document}
+

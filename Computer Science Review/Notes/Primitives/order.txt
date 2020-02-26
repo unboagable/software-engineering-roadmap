@@ -1,0 +1,5 @@
+gereral primitives
+pointers
+ints
+bit manipulation
+arrays

@@ -1,0 +1,129 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Graph Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Graphs} \\
+\end{center}
+
+\question{Notation}
+
+G graph
+
+V Vertices 
+
+E edges
+
+\question{Representation}
+
+\begin{itemize}
+  \item Adjacency List
+\begin{itemize}
+  \item Storage O($\mid$V$\mid$ + $\mid$E$\mid$)
+  \item Add vertex O(1)
+  \item Remove vertex O($\mid$V$\mid$ + $\mid$E$\mid$)
+  \item Add edge O(1)
+  \item Remove edge O($\mid$E$\mid$)
+  \item Query O($\mid$V$\mid$)
+\end{itemize}
+  \item Adjacency Matrix
+\begin{itemize}
+  \item Storage O(${\mid V \mid} ^2$)
+  \item Add vertex O(${\mid V \mid} ^2$)
+  \item Remove vertex O(${\mid V \mid} ^2$)
+  \item Add edge O(1)
+  \item Remove edge O(1)
+  \item Query O(1)
+\end{itemize}
+\end{itemize}
+
+\question{Searches}
+
+\begin{itemize}
+  \item DFS
+\begin{itemize}
+  \item stack
+  \item DFS Numbering (entrance(d)/exit (f)) 
+  \begin{itemize}
+    \item  ‘d’ value of a vertex u is lesser than the ‘d’ value of all the descendants of u.
+    \item  ‘f’ value of a vertex u is higher than the ‘f’ value of all the descendants of u.
+  \end{itemize}
+  \item visited set
+  \item cycles?
+  \item DFS tree?
+\begin{itemize}
+  \item forward edge (node to descendant)
+  \item back (node to ancestor)
+  \item cross (neither forward nor back)
+\end{itemize}
+\end{itemize}
+  \item BSF
+\begin{itemize}
+  \item queue
+\end{itemize}
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item undirected vs directed
+\end{itemize}
+
+\end{document}
+

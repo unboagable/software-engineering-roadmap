@@ -1,0 +1,128 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Operating System notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Operating System} \\
+\end{center}
+
+\question{Processes}
+
+\begin{itemize}
+  \item instance of computer program
+  \item abstraction for a running program
+  \item single CPU can appear to execute multiple processes concurrently by having the processor switch among them
+  \item OS performs this using contect switching
+  \item OS keeps track all state information for a process (context)
+  \begin{itemize}
+    \item values of PC, register file, main memory
+  \end{itemize}
+  \item single processor can only execute code for single process
+  \item when OS decided to transfer control to new process performs context switch
+  \begin{itemize}
+    \item save contect of current process, restore contect of new process, pass control to new context
+  \end{itemize}
+  \item system call: special function, passes control to OS and saves shell context, creates new context (hello) and gives it control
+  \item scheduling: kernel decides to preempt the current process and restart a previously preempted process
+  \begin{itemize}
+    \item handled by code in the kernel called scheduler
+  \end{itemize}
+  \item sum: decision: scheduling, act: context switch
+\end{itemize}
+
+\question{Threads}
+
+\begin{itemize}
+  \item execution unit
+  \item process can be made up of multiple threads that execute concurrently on process context with same code and global data
+  \item requirement for concurrency in network servers make threads important
+  \begin{itemize}
+    \item easier to share data between multiple threads than multiple processes
+    \item threads more efficient than processes
+  \end{itemize}
+  \item multithreaing a method to make programs faster with multiple processors
+\end{itemize}
+
+\question{Virtual Memory}
+
+\begin{itemize}
+  \item abstraction provides each process the illusion that it has exclusive use of the main memory
+  \begin{itemize}
+    \item heap: follows code and data areas (which are themselves fixed in size)
+    \begin{itemize}
+      \item expands and contracts dynamically at runtime (malloc, free)
+    \end{itemize}
+    \item Shared libraies: near the middle
+    \item stack: at the top
+    \begin{itemize}
+      \item used to implement function calls
+      \item expands and shrinks dynamically (grows when you call/shrinks when you return from a function)
+    \end{itemize}
+    \item kernel virtual memory
+  \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item Computer Systems: A Programmers Perspective
+\end{itemize}
+
+\end{document}
+

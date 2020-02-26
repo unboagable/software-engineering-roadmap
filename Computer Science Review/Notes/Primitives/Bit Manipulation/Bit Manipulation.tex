@@ -1,0 +1,109 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Bit Manipulation Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+\rhead{\fancyplain{}{\myname\\ \myandrew}}
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Bit Manipulation} \\
+\end{center}
+
+
+\question{Basics}
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{l|r|r|r|r}
+And (\&): & 0 \& 0 = 0 & 1 \& 0 = 0 & 0 \& 1 = 0 & 1 \& 1 = 1\\
+\hline
+Or (\textbar): & 0 \textbar 0 = 0 & 1 \textbar 0 = 1 & 0 \textbar 1 = 1 & 1 \textbar 1 = 1\\
+\hline
+Xor ($\bigwedge$): & 0 \textasciicircum 0 = 0 & 1 \textasciicircum 0 = 0 & 0 \textasciicircum 1 = 0 & 1 \textasciicircum 1 = 1\\
+\end{tabular}
+\end{center}
+\end{table}
+
+\question{Shifts}
+
+\begin{itemize}
+  \item Left Shift: If you run out of space the bits drop off
+\begin{itemize}
+  \item Both arith and logical shift in 0
+\end{itemize}
+  \begin{enumerate}
+    \item 00011001 \textless \textless 2 = 01100100
+    \item 00011001 \textless \textless 4 = 10010000
+  \end{enumerate}
+  \item Right Shift if you run out of space the bits drop off
+\begin{itemize}
+  \item arithmetic shift - shift in sign bit (sticky shift), logical-shift in 0
+\end{itemize}
+  \begin{enumerate}
+  \item 00011001 \textgreater \textgreater 2 = 00000110
+  \item 00011001 \textgreater \textgreater 4 = 00000001
+  \end{enumerate}
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item Windows calculator can do operations in binary, view programmer
+\end{itemize}
+
+\end{document}
+

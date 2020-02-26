@@ -1,0 +1,3 @@
+Shortest Path
+Minimum Spanning Tree
+Graph Contraction

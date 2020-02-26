@@ -1,0 +1,4 @@
+software design
+d 4 change
+d 4 reuse
+d 4 robustness

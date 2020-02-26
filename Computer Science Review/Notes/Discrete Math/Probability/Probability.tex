@@ -1,0 +1,96 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\newcommand\Myperm[2][n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2][n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Probability Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Probability} \\
+\end{center}
+
+Probability numbers between 0 and 1, 0 is impossible, 1 is certain
+
+\question{Interpretations}
+
+\begin{itemize}
+  \item Frequentist-proportion of heads if we toss a coin many times
+  \item Propensity-tendency of a coin to land heads
+  \item Subjectivist-how strongly we believe that a coin will land heads
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item Probability vs statistics (prob-likelihood of certain events vs stat-observe results and determine probabilities from which they might have originated)
+  \item Random isnt really randon just chaotic (underlying principles very complicated and tiny changes affect result, just really hard to predict)
+  \item true randomness does exists-radioactive decay
+  \item Quantum mechanics is the only known effect in nature that produces true randomness
+  \item As we roll dice more and more often, the observed frequencies become closer and closer to the frequencies we predict using probability theory. This principle always applies in probability and is called the Law of large numbers.
+  \item As we increase the number of dice rolled at once, we also see that the shape of the probability distribution changes from a triangular shape to a bell-shaped curve. This is known as the Central Limit Theorem. 
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{https://en.wikipedia.org/wiki/Probability}
+\end{itemize}
+
+\end{document}
+

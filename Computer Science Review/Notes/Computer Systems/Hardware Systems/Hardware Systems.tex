@@ -1,0 +1,117 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Hardware Systems notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Hardware Systems} \\
+\end{center}
+
+\question{Hardware Organization}
+
+\begin{itemize}
+  \item buses
+  \begin{itemize}
+    \item carry bytes of info between componenets
+    \item words: fixed sized chunks of bytes (4 bytes/32 bits or 8 bytes/64 bits)
+  \end{itemize}
+  \item I/O devices
+  \begin{itemize}
+    \item system's connection to outside world by controller or adapter
+    \item display, disk, mouse
+    \item controller: chip sets in device itself or motherboard
+    \item adapter plugs into slots on motherboard
+  \end{itemize}
+  \item Main Memory
+  \begin{itemize}
+    \item temporary storage for both program and data it manipulates
+    \item physically dynamic random access memory (DRAM)
+    \item logically organized as linear array of bytes each with its own unique address
+  \end{itemize}
+  \item Processor
+  \begin{itemize}
+    \item central processing unit (cpu)
+    \item interprets (or executes) instructions stored in main memory
+    \item at its core is a word sized register called program counter (PC)
+      \begin{itemize}
+      \item At any point points at machine language instruction in main memory
+      \end{itemize}
+    \item executes instruction and updates pc to next instruction
+    \item instructions revolve around main memory, register file, and arithmetic/logic unit
+      \begin{itemize}
+      \item reigter file small storage device with word sized registers each with its own unique name
+      \item ALU computers new data and address values
+      \end{itemize}
+    \item Simple operations CPU carries out at the request of an instruction
+      \begin{itemize}
+      \item Load: Copy a byte or a word from main memory into a register, overwriting the previous contents
+      \item Store: Copy a byte or a word from a register to a location in main memory, overwriting the previous contents
+      \item Operate: Copy the contents of two registers to the ALU, perform an arithmetic operation on the two words, and store the result in a register, overwriting the previous contents
+      \item Jump: Extract a word from the instruction, copy that word into the program counter (PC), overwriting the previous value
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item Computer Systems: A Programmers Perspective pg 7-10
+\end{itemize}
+
+\end{document}
+

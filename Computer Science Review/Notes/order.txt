@@ -1,0 +1,9 @@
+title
+primitives
+Big-O Cheat Sheet
+data structures
+algorithms
+discrete math
+general
+computer systems
+languages-todo

@@ -1,0 +1,104 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Heap Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Heap} \\
+\end{center}
+
+\question{Binary Heap Operations}
+
+\begin{itemize}
+  \item findmax (O(1))
+  \item insert (O(log n) (Binary Imp))
+\begin{itemize}
+  \item insert item into next place in the BT
+  \item Swap item up with parent until heap invariant is maintained
+\end{itemize}
+  \item remove-max (O(log n) (Binary Imp))
+\begin{itemize}
+  \item Remove the root (and store it to return)
+  \item Place the last element inserted at the root
+  \item Swap item down with child until heap invariant is maintained
+\end{itemize}
+\end{itemize}
+
+\question{Applications}
+
+\begin{itemize}
+  \item heapsort
+  \item graph algorithms
+  \item order stats
+  \item Priority Queue
+\end{itemize}
+
+\question{Notes}
+
+\begin{itemize}
+  \item tree-based structure that satisfies heap property (max heap parent greater than or equal to children)
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{http://interactivepython.org/runestone/static/pythonds/Trees/BinaryHeapImplementation.html}
+\end{itemize}
+
+\end{document}
+

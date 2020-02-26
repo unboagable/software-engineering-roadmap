@@ -1,0 +1,185 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Set Theory Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Set Theory} \\
+\end{center}
+
+\question{Definitions}
+
+\begin{itemize}
+  \item an object either belongs or does not belong
+  \item set-collection of things that are brought together because they obey a certain (well defined) rule
+\begin{itemize}
+  \item ex: numbers, people, shapes
+\end{itemize}
+  \item element- "thing" that belongs to a given set
+\end{itemize}
+
+\question{Symbols}
+
+\begin{itemize}
+  \item $\{$...$\}$-the set of ...
+\begin{itemize}
+  \item ex:$\{$-3,-2,-1,0,1,2$\}$, $\{$integers between -3 and 3 inclusive$\}$, $\{$x$\mid$x is an integer amd $\mid$x$\mid$ \textless 4$\}$
+\end{itemize}
+  \item ($\in$) symbol means element of
+  \item set usually uppercase A,B and elements lowercase x,y
+  \item U-universal set, all things under discussion
+  \item $\{\}$,($\varnothing$)-empty set, null set
+  \item N-natural numbers, whole numbers starting at 1
+  \item Z-integers
+  \item R-real numbers
+\end{itemize}
+
+\question{Set Operations}
+
+\begin{itemize}
+  \item (A $\cap$ B)intersection (two sets overlap)
+  \item (A $\cup$ B) union (elements in either)
+  \item (A - B) or (A \ B) difference (elements in A but not B)
+  \item (A') or($A^C$) or  complement (everything not in A is in A')
+  \item cardinality (if A=$\{$lowercase letters of the alphabet$\}$, $\mid$ A$\mid$ =26)
+  \item P(A) powerset-set of all subsets (including empty) of A
+\begin{itemize}
+  \item if $\mid$ A $\mid$=k then $\mid$ P(A )$\mid$ =$2^k$ proof (for each element we can choose to include element or not)
+\end{itemize}
+  \item Cartesian Products
+\begin{itemize}
+  \item if we have n sets: A1 , A2, ..., An, then their Cartesian product is defined by: $A1 × A2 × ... × An$ = $\{$ (a1, a2, ..., an) $\mid$ a1 $\in$ A1, a2 $\in$ A2, ..., an $\in$ An) $\}$ and (a1, a2, ..., an) is called an ordered n-tuple.
+\end{itemize}
+\end{itemize}
+
+\question{Relationships}
+
+\begin{itemize}
+  \item Equality = (same elements, repeats ignored)
+  \item subsets (A$\subseteq$B) all elements of A are also elements of B
+\begin{itemize}
+  \item A $\subseteq$ B and B $\subseteq$ A, then A = B
+  \item proper subset (A $\subset$ B) if B contains at least one element that isn't in A
+\end{itemize}
+  \item disjoint no elements in common
+\end{itemize}
+
+\question{Foundational Rules of Set Theory}
+
+\begin{itemize}
+  \item The Laws of Sets
+  \begin{itemize}
+    \item Commutative Laws
+    \begin{itemize}
+       \item $\cap$ B = B $\cap$ A
+       \item A $\cup$ B = B $\cup$ A
+    \end{itemize}
+    \item Associative Laws
+    \begin{itemize}
+       \item (A $\cap$ B) $\cap$ C = A $\cap$ (B $\cap$ C)
+       \item (A $\cup$ B) $\cup$ C = A $\cup$ (B $\cup$ C)
+    \end{itemize}
+    \item Distributive Laws
+    \begin{itemize}
+       \item A $\cap$ (B $\cup$ C) = (A $\cap$ B) $\cup$ (A $\cap$ C)
+       \item A $\cup$ (B $\cap$ C) = (A $\cup$ B) $\cap$ (A $\cup$ C)
+    \end{itemize}
+    \item Idempotent Laws
+    \begin{itemize}
+       \item A $\cap$ A = A
+       \item A $\cup$ A = A
+    \end{itemize}
+    \item Identity Laws
+    \begin{itemize}
+       \item A $\cup$ $\varnothing$ = A
+       \item A $\cap$ U = A
+       \item A $\cup$ U = U
+       \item A $\cap$ $\varnothing$ = $\varnothing$
+    \end{itemize}
+    \item Involution Law
+    \begin{itemize}
+       \item (A ') ' = A
+    \end{itemize}
+    \item Complement Laws
+    \begin{itemize}
+       \item A $\cup$ A' = U
+       \item A $\cap$ A' = $\varnothing$
+       \item U ' = $\varnothing$
+       \item $\varnothing$ ' = U
+    \end{itemize}
+    \item De Morgan’s Laws
+    \begin{itemize}
+       \item (A $\cap$ B) ' = A ' $\cup$ B '
+       \item (A $\cup$ B) ' = A ' $\cap$ B '
+    \item proof
+    \begin{itemize}
+       \item (A $\cup$ B) ' $\subseteq$ A ' $\cap$ B '
+       \item A' $\cap$ B ' $\subseteq$ (A $\cup$ B) '
+    \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\question{sources}
+
+\begin{itemize}
+\item \url{https://en.wikibooks.org/wiki/Discrete_Mathematics/Set_theory}
+\end{itemize}
+
+\end{document}
+
