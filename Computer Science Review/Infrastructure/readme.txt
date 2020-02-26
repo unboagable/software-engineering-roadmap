@@ -1,5 +1,2 @@
-
-
-
-https://miktex.org/download
+Software to manipulate latex
 
