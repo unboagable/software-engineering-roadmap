@@ -1,0 +1,157 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Recursive/Iterative}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Recursive/Iterative} \\
+\end{center}
+
+\question{Definitions}
+
+\begin{itemize}
+  \item Recursive
+
+  \begin{itemize}
+    \item a function calls itself again and again till the base condition(stopping condition) is satisfied
+    \item common to functional programming
+  \end{itemize}
+
+  \item Iterative
+
+  \begin{itemize}
+    \item iterative is used to describe a situation in which a sequence of instructions can be executed multiple times
+    \item each time an iteration
+  \end{itemize}
+
+\end{itemize}
+
+\question{Recursive Rules}
+
+\begin{itemize}
+  \item each recursive call should be on a smaller instance of the same problem, that is, a smaller subproblem
+  \item recursive calls must eventually reach a base case, which is solved without further recursion
+
+  \begin{itemize}
+    \item Base case
+    \item Recursive Case
+  \end{itemize}
+
+  \item Dynamic Programming and recursion
+
+  \begin{itemize}
+    \item use when ever you compute a recursive input multiple times
+    \item memoization (caching previosly computed results, use result next time computation is needed)
+  \end{itemize}
+
+\end{itemize}
+
+\question{Example problems}
+
+\begin{itemize}
+  \item drawing fractals
+  \item factorial
+  \item towers of hanoi
+\end{itemize}
+
+\question{Comparison}
+
+\begin{itemize}
+  \item factorial
+
+  \begin{itemize}
+    \item Iterative
+\begin{lstlisting}
+def factorial(n):
+    factorial = 1
+    for i in range(2,n+1):
+        factorial *= i
+    return factorial
+\end{lstlisting}
+    \item Recursive
+\begin{lstlisting}
+def factorial(n):
+    if (n < 2):
+        return 1
+    else:
+        return n*factorial(n-1)
+\end{lstlisting}
+  \end{itemize}
+
+  \item Generally recursion more elegant, iteration better performance and debugability 
+  \item Iterative algorithm
+
+  \begin{itemize}
+    \item more lines of code
+    \item faster
+  \end{itemize}
+
+  \item Recursive algorithm
+
+  \begin{itemize}
+    \item complex to implement
+    \item code will be elegant and easy to read
+    \item tracing is difficult
+    \item takes more time because of overheads like calling functions and registering stacks repeatedly
+    \item some complex problems can be solved easily and effectively in recursion
+  \end{itemize}
+
+\end{itemize}
+
+\end{document}
+

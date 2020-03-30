@@ -1,0 +1,119 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Greedy Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Greedy} \\
+\end{center}
+
+\question{Greedy}
+
+\begin{itemize}
+  \item algorithm that makes the locally optimal choice at each stage
+  \item a greedy algorithm never reconsiders its choices
+
+  \begin{itemize}
+      \item choice made by a greedy algorithm may depend on choices made so far, but not on future choices or all the solutions to the subproblem
+  \end{itemize}
+
+\end{itemize}
+
+\question{Greedy components}
+
+\begin{itemize}
+  \item a candidate set: from which a solution is created
+  \item a selection function: chooses best candidate to be added to the solution
+  \item a feasibility function: determines if a candidate can be used to contribute to a solution
+  \item an objective function: assigns a value to a solution (or partial solution)
+  \item a solution function: indicates when we discover a complete solution
+\end{itemize}
+
+\question{Examples}
+
+\begin{itemize}
+  \item Traveling Salesman
+
+  \begin{itemize}
+    \item Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city
+  \end{itemize}
+
+  \item min coins to give change
+
+  \begin{itemize}
+    \item pick biggest coin possible, next biggest possible, etc.
+  \end{itemize}
+
+  \item minimum spanning tree
+
+  \begin{itemize}
+    \item Kruskal's
+    \item Prim's
+  \end{itemize}
+
+  \item optimum Huffman trees
+\end{itemize}
+
+\question{Sources}
+
+\begin{itemize}
+  \item \url{https://en.wikipedia.org/wiki/Greedy_algorithm}
+\end{itemize}
+
+\end{document}
+

@@ -1,0 +1,131 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Shortest Path Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Shortest Path} \\
+\end{center}
+
+\question{Dijkstras}
+
+Implementation with PQ
+
+\begin{itemize}
+\item O($\mid$E$\mid$ + $\mid$V$\mid$ log $\mid$V$\mid$)
+\item Make source current node with its distance 0
+\item Repeat until no elements in PQ
+\begin{itemize}
+\item If current node is not in distance map or has a greater value than computed value place the current node in the distance map (mapped to distance)
+\item Place its neighbors in the PQ with their distances to current node + current node distance
+\item Dequeue min element from PQ and make current node
+\end{itemize}
+\end{itemize}
+
+\question{Bellman Ford}
+
+psuedo java code
+
+\begin{lstlisting}
+for i=1 to size(vertices)-1
+	for each edge (u,v)
+		if distance[u]+w < distance[v]
+			distance[v]=distance[u]+w
+			predecessor[v]=u
+\end{lstlisting}
+
+c++ code
+
+\begin{lstlisting}
+function BellmanFord(list vertices, list edges, vertex source)
+   ::distance[],predecessor[]
+
+   // This implementation takes in a graph, represented as
+   // lists of vertices and edges, and fills two arrays
+   // (distance and predecessor) with shortest-path
+   // (less cost/distance/metric) information
+
+   // Step 1: initialize graph
+   for each vertex v in vertices:
+       if v is source then distance[v] := 0
+       else distance[v] := inf
+       predecessor[v] := null
+
+   // Step 2: relax edges repeatedly
+   for i from 1 to size(vertices)-1:
+       for each edge (u, v) in Graph with weight w in edges:
+           if distance[u] + w < distance[v]:
+               distance[v] := distance[u] + w
+               predecessor[v] := u
+
+   // Step 3: check for negative-weight cycles
+   for each edge (u, v) in Graph with weight w in edges:
+       if distance[u] + w < distance[v]:
+           error "Graph contains a negative-weight cycle"
+   return distance[], predecessor[]
+\end{lstlisting}
+
+Notes
+
+\begin{itemize}
+\item O($\mid$V$\mid$ $\mid$E$\mid$)
+\item Allows negative weights
+\end{itemize}
+
+\end{document}
+

@@ -1,5 +1,4 @@
 DnC
 Contraction
-Dynamic Programming
 Greedy
 Graph
