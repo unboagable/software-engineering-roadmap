@@ -1,0 +1,119 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Dynamic Programming Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Dynamic Programming} \\
+\end{center}
+
+\question{Dynamic Programming}
+
+ Dynamic programming is a technique for solving problems recursively and is applicable when the computations of the subproblems overlap
+
+\question{DP Tools}
+
+\begin{itemize}
+   \item Memoization (Top down)
+
+  \begin{itemize}
+     \item an optimization technique where you cache previously computed results, and return the cached result when the same computation is needed again
+     \item storing the results of expensive function calls and returning the result when the same inputs occur again
+  \end{itemize}
+
+   \item Tabulation (Bottom Up)
+
+  \begin{itemize}
+     \item using iterative approach to solve the problem by solving the smaller sub- problems first and then using it during the execution of bigger problem
+  \end{itemize}
+
+   \item Comparison
+
+  \begin{itemize}
+     \item memoization usually requires more code and is less straightforward, but has computational advantages in some problems
+
+    \begin{itemize}
+       \item mainly those which you do not need to compute all the values for the whole matrix to reach the answer
+    \end{itemize}
+
+     \item tabulation is more straightforward, but may compute unnecessary values
+
+    \begin{itemize}
+       \item if you do need to compute all the values, this method is usually faster, though, because of the smaller overhead
+    \end{itemize}
+
+  \end{itemize}
+
+\end{itemize}
+
+\question{Examples}
+
+\begin{itemize}
+   \item Longest Common Subsequence problem
+   \item Knapsack
+   \item Travelling salesman problem
+\end{itemize}
+
+\question{Sources}
+
+\begin{itemize}
+  \item \url{http://stackoverflow.com/questions/12042356/memoization-or-tabulation-approach-for-dynamic-programming}
+\end{itemize}
+
+\end{document}
+
