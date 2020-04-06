@@ -1,0 +1,222 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Nuances Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Nuances} \\
+\end{center}
+
+\question{General Tips}
+
+\begin{itemize}
+  \item Getter and setter  
+  \item Override and super
+  \item Java outmatically collects garbage  
+  \item \&\&/$\mid\mid$ checks left first
+  \item + strings makes a new string every time, if you want to do in a loop use stringbuilder(reduce memory)
+  \item Everything in Java not explicitly set to something, is initialized to a zero value
+
+  \begin{itemize}
+    \item references (anything that holds an object):null
+    \item int/short/byte:0
+    \item float/double:0.0
+    \item booleans: false.
+    \item array of something, all entries are also zeroed
+  \end{itemize}
+
+\end{itemize}
+
+\question{Useful built in functions}
+
+\begin{itemize}
+  \item Arrays
+\begin{itemize}
+  \item Arrays.binarySearch(arr, target)
+  \begin{itemize}
+    \item Negative value shows where it should be
+  \end{itemize}
+  \item Arrays.sort(arr)
+\end{itemize}
+\end{itemize}
+
+\question{Switch Statement}
+
+\begin{itemize}
+  \item All matching cases will be run unless their is a break statement
+  \item Example
+  \begin{itemize}
+  \item 
+    \begin{lstlisting}
+switch (month) {
+            case 1:  monthString = "January";
+                     break;
+            case 2:  monthString = "February";
+                     break;
+            case 3:  monthString = "March";
+                     break;
+            case 4:  monthString = "April";
+                     break;
+            case 5:  monthString = "May";
+                     break;
+            case 6:  monthString = "June";
+                     break;
+            case 7:  monthString = "July";
+                     break;
+            case 8:  monthString = "August";
+                     break;
+            case 9:  monthString = "September";
+                     break;
+            case 10: monthString = "October";
+                     break;
+            case 11: monthString = "November";
+                     break;
+            case 12: monthString = "December";
+                     break;
+            default: monthString = "Invalid month";
+                     break;
+        }
+    \end{lstlisting}
+  \end{itemize}
+\end{itemize}
+
+\question{Breaking out of for loops}
+
+\begin{itemize}
+  \item if you want to skip a particular iteration, use continue
+  \begin{itemize}
+    \item
+
+\begin{lstlisting}
+for(int i=0 ; i<5 ; i++){
+
+    if (i==2){
+
+      continue;
+    }
+}
+\end{lstlisting}
+
+\end{itemize}
+  \item if you want to break out of the immediate loop use break
+  \begin{itemize}
+    \item
+
+\begin{lstlisting}
+for(int i=0 ; i<5 ; i++){
+
+    if (i==2){
+
+        break;
+    }
+}
+\end{lstlisting}
+
+  \end{itemize}
+  \item if there are 2 loop, outer and inner.... and you want to break out of both the loop from  the inner loop, use break with label
+  \begin{itemize}
+    \item
+
+\begin{lstlisting}
+lab1: for(int j=0 ; j<5 ; j++){
+     for(int i=0 ; i<5 ; i++){
+
+        if (i==2){
+
+          break lab1;
+        }
+     }
+}
+\end{lstlisting}
+
+  \end{itemize}
+\end{itemize}
+
+\question{Things to override in new object (for hashing and equality uses)}
+
+  \begin{itemize}
+    \item public int hashCode()
+    \item public boolean equals(Object object)
+  \end{itemize}
+
+\begin{lstlisting}
+ex: Tiger
+	@Override
+	public boolean equals(Object object) {
+		boolean result = false;
+		if (object == null || object.getClass() != getClass()) {
+			result = false;
+		} else {
+			Tiger tiger = (Tiger) object;
+			if (this.color == tiger.getColor()
+					&& this.stripePattern == tiger.getStripePattern()) {
+				result = true;
+			}
+		}
+		return result;
+	}
+\end{lstlisting}
+
+\question{Sources}
+
+\begin{itemize}
+\item \url{https://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm}
+\end{itemize}
+
+\end{document}
+

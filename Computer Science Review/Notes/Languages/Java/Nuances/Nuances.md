@@ -1,4 +1,4 @@
-Java Nuances
+Nuances
 
 # General Tips
 
