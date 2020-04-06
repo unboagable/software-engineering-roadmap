@@ -1,0 +1,163 @@
+% You should title the file with a .tex extension (hw1.tex, for example)
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\oddsidemargin0cm
+\topmargin-2cm     %I recommend adding these three lines to increase the 
+\textwidth16.5cm   %amount of usable space on the page (and save trees)
+\textheight23.5cm  
+
+\newcommand{\question}[2] {\vspace{.25in} \hrule\vspace{0.5em}
+\noindent{\bf #1: #2} \vspace{0.5em}
+\hrule \vspace{.10in}}
+\renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
+
+\newcommand{\myname}{Chang-Hyun Mungai}
+\newcommand{\myhwnum}{Theory and Specification Notes}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 1pt}
+ 
+\pagestyle{fancyplain}
+\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+
+\begin{document}
+
+\medskip                        % Skip a "medium" amount of space
+                                % (latex determines what medium is)
+                                % Also try: \bigskip, \littleskip
+
+\thispagestyle{plain}
+\begin{center}                  % Center the following lines
+{\Large Theory and Specification} \\
+\end{center}
+
+\question{Principles}
+
+\begin{enumerate}
+  \item It must be simple, object-oriented, and familiar.
+  \item It must be robust and secure.
+  \item It must be architecture-neutral and portable.
+  \item It must execute with high performance.
+  \item It must be interpreted, threaded, and dynamic.
+\end{enumerate}
+
+\question{Access Modifiers}
+
+\begin{itemize}
+  \item public
+
+  \begin{itemize}
+    \item any class can access
+    \item accessible by entire application
+  \end{itemize}
+
+  \item private
+
+  \begin{itemize}
+    \item only accessible within the class
+  \end{itemize}
+
+  \item protected
+
+  \begin{itemize}
+    \item allow the class itself to access them
+    \item classes inside of the same package to access them
+    \item subclasses of that class to access them
+  \end{itemize}
+
+  \item package protected
+
+  \begin{itemize}
+    \item default
+    \item the same class and any class in the same package has access
+    \item protected minus the subclass unless subclass is in package
+  \end{itemize}
+
+  \item Static: Belongs to class not an instance of the class
+\end{itemize}
+
+\question{Type Classifications}
+
+\begin{itemize}
+  \item Concrete Types
+  \begin{itemize}
+    \item concrete types describe object implementations, including memory layout and the code executed upon method invocation
+    \item the exact class of which an object is an instance not the more general set of the class and its subclasses
+    \item beware of falling into the trap of thinking that all concrete types are single classes!
+    \item Set of Exact Classes
+    \item ex: List x has concrete type {ArrayList, LinkedList, ...}
+  \end{itemize}
+  \item Abstract Types
+  \begin{itemize}
+    \item Abstract types, on the other hand, describe properties of objects
+    \item They do not distinguish between different implementations of the same behavior
+    \item Java provides abstract types in the form of interfaces, which list the fields and operations that implementations must support
+  \end{itemize}
+\end{itemize}
+
+\question{Generics}
+
+\begin{itemize}
+  \item Definition
+  \begin{itemize}
+    \item generics are a facility of generic programming
+    \begin{itemize}
+       \item a style of computer programming in which algorithms are written in terms of types to-be-specified-later that are then instantiated when needed for specific types provided as parameters
+    \end{itemize}
+    \item ex: compiletime: 
+    \begin{lstlisting}
+    List<String> 
+    \end{lstlisting}
+    runtime: List
+  \end{itemize}
+  \item Notes
+  \begin{itemize}
+    \item in java, generics are only checked at compile time for type correctness
+    \item generic type information is then removed via a process called type erasure, to maintain compatibility with old JVM implementations, making it unavailable at runtime
+  \end{itemize}
+  \item Sources
+  \begin{itemize}
+    \item \url{https://en.wikipedia.org/wiki/Generics_in_Java}
+  \end{itemize}
+\end{itemize}
+
+\question{Sources}
+
+\begin{itemize}
+  \item \url{https://en.wikipedia.org/wiki/Java_(programming_language)}
+  \item \url{https://www.tutorialspoint.com/java/java_interview_questions.htm}
+\end{itemize}
+
+\end{document}
+
