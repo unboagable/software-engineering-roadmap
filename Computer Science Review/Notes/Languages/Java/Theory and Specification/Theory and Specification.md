@@ -15,6 +15,23 @@ Theory and Specification
   * the Object class is the parent class of all the classes in java by default
 * a class represents the set of properties or methods that are common to all objects of one type
   * a class can contain fields and methods to describe the behavior of an object
+* an interface is an abstract type that is used to specify a behavior that classes must implement
+
+# Inheritance
+
+* the class which inherits the properties of other is known as subclass (derived class, child class) 
+* the class whose properties are inherited is known as superclass (base class, parent class).
+* extends is the keyword used to inherit the properties of a class
+```
+class Super {
+   .....
+   .....
+}
+class Sub extends Super {
+   .....
+   .....
+}
+```
 
 # Access Modifiers
 
