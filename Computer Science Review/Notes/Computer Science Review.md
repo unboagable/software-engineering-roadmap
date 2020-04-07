@@ -8,13 +8,13 @@ Computer Science Review
 
 # [Algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
 
-[Back Propagation (ANN)]()
+[Back Propagation (ANN)](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Nondeterministic/Back%20Propagation%20(ANN)/Back%20Propagation%20(ANN).md)
 
-[Convolutional (CNN)]()
+[Convolutional (CNN)](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Nondeterministic/Convolutional%20(CNN)/Convolutional%20(CNN).md)
 
-[Dynamic Programming]()
+[Dynamic Programming](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Deterministic/Dynamic%20Programming/Dynamic%20Programming.md)
 
-# [Languages]()
+# [Languages](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/Languages.md)
 
 Java
 
