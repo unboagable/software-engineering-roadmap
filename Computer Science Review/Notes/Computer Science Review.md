@@ -1,12 +1,12 @@
-Computer Science Review
+# Computer Science Review
 
-# Primitives
+## Primitives
 
-# Big-O Cheat Sheet
+## Big-O Cheat Sheet
 
-# Data Structures
+## Data Structures
 
-# [Algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
+## [Algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
 
 [Back Propagation (ANN)](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Nondeterministic/Back%20Propagation%20(ANN)/Back%20Propagation%20(ANN).md)
 
@@ -14,7 +14,7 @@ Computer Science Review
 
 [Dynamic Programming](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Deterministic/Dynamic%20Programming/Dynamic%20Programming.md)
 
-# [Languages](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/Languages.md)
+## [Languages](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/Languages.md)
 
 Java
 

@@ -1,5 +1,5 @@
-Machine Learning
+# Machine Learning
 
-[Nondeterministic]()
-[Deterministic]()
+## [Nondeterministic]()
+## [Deterministic]()
 
