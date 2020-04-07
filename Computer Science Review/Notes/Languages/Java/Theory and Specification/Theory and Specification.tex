@@ -105,6 +105,23 @@ class Sub extends Super {
 \end{lstlisting}
 \end{itemize}
 
+\question{Overloading}
+
+occurs when two or more methods in one class have the same method name but different parameters
+
+\begin{lstlisting}
+class Dog{
+    public void bark(){
+        System.out.println("woof ");
+    }
+    // overloading method
+    public void bark(int num){
+        for(int i=0; i<num; i++)
+            System.out.println("woof ");
+    }
+}
+\end{lstlisting}
+
 \question{Access Modifiers}
 
 \begin{itemize}

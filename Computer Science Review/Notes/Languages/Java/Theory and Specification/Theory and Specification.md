@@ -1,6 +1,6 @@
-Theory and Specification
+# Theory and Specification
 
-# Principles
+## Principles
 
 1. It must be simple, object-oriented, and familiar.
 2. It must be robust and secure.
@@ -8,7 +8,7 @@ Theory and Specification
 4. It must execute with high performance.
 5. It must be interpreted, threaded, and dynamic.
 
-# Basic Definitions
+## Basic Definitions
 
 * an object is a runtime entity and it’s state is stored in fields and behavior is shown via methods
   * methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication
@@ -17,12 +17,12 @@ Theory and Specification
   * a class can contain fields and methods to describe the behavior of an object
 * an interface is an abstract type that is used to specify a behavior that classes must implement
 
-# Inheritance
+## Inheritance
 
 * the class which inherits the properties of other is known as subclass (derived class, child class) 
 * the class whose properties are inherited is known as superclass (base class, parent class).
 * extends is the keyword used to inherit the properties of a class
-```
+```java
 class Super {
    .....
    .....
@@ -33,7 +33,27 @@ class Sub extends Super {
 }
 ```
 
-# Access Modifiers
+## Overloading
+
+occurs when two or more methods in one class have the same method name but different parameters
+
+```java
+class Dog{
+    public void bark(){
+        System.out.println("woof ");
+    }
+ 
+    //overloading method
+    public void bark(int num){
+        for(int i=0; i<num; i++)
+            System.out.println("woof ");
+    }
+}
+```
+
+## Overriding
+
+## Access Modifiers
 
 * public
   * any class can access
@@ -50,7 +70,9 @@ class Sub extends Super {
   * protected minus the subclass unless subclass is in package
 * Static: Belongs to class not an instance of the class
 
-# Sources
+## Sources
 
 https://en.wikipedia.org/wiki/Java_(programming_language)
 https://www.tutorialspoint.com/java/java_interview_questions.htm
+https://www.programcreek.com/2009/02/overriding-and-overloading-in-java-with-examples/
+
