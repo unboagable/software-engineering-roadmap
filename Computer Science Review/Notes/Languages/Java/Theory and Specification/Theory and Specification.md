@@ -8,6 +8,14 @@ Theory and Specification
 4. It must execute with high performance.
 5. It must be interpreted, threaded, and dynamic.
 
+# Basic Definitions
+
+* an object is a runtime entity and it’s state is stored in fields and behavior is shown via methods
+  * methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication
+  * the Object class is the parent class of all the classes in java by default
+* a class represents the set of properties or methods that are common to all objects of one type
+  * a class can contain fields and methods to describe the behavior of an object
+
 # Access Modifiers
 
 * public
