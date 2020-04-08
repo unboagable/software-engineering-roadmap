@@ -104,8 +104,8 @@
   \item Migrating File State
   \begin{itemize}
     \item keep track of the essential file state within the process and be ready to recreate it
-      \item migration system guarantees that higher  \item level file operations are atomic, operation opens the file, seeks as needed, performs a read or write, and then closes the file
-      \item or maintain the same file state, but only reopen the file when needed
+      \item migration system guarantees that higher level file operations are atomic, operation opens the file, seeks as needed, performs a read or write, and then closes the file
+      \item maintain the same file state, but only reopen the file when needed
   \end{itemize}
   \item Migrating Communication Sessions
   \begin{itemize}
