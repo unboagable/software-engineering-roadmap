@@ -29,6 +29,33 @@
   * need to reestablish and map global state, such as network sockets
   * higher level network name
   * edge cases, such as what happens when a process move mid-transmission
+  
+## Networking
+
+* LAN:  Local Area Network a homogenous network
+  * to communicate broadcast (yell) and all stations hear the broadcast
+  * station have station id or LAN Address and messages have sender and receiver id
+    * everyone can hear other stations messages but ignore it unless diagnostic or malicious
+  * size is self-limiting
+    * longer wire the weaker the signal
+    * greater the distance through the air the weaker the signal
+    * network can be clogged with collision, can collapse with utilization as low as 30%
+* bridge
+  * connect LANs
+  * send message for station only to relevant LAN (hashtable)
+  * bridge managed so if station changes LAN
+  * bridges (through configuration) create a spanning tree of location to prevent cycles
+    * if bridge fails form a different tree to get around failure
+  * can't create bridges for the whole planet
+* IP Address
+  * IP4
+    * Class A (huge): 8 bits(network) + 24 bits (host) address begin with 0
+    * Class B (big): 16 bits(network) + 16 bits (host) address begin with 10
+    * Class C (small): 24 bits(network) + 8 bits (host) address begin with 110
+  * IP6
+    * Classless, first few bits to describe the network/host division
+    * 73.93.0.0/15
+      * address with 15 network bits and 17 host bits
 
 ## Sources
 
