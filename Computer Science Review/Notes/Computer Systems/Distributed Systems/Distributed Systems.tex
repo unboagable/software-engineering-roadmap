@@ -73,8 +73,9 @@
 \question{General}
 
 \begin{itemize}
+  \item a system with multiple components located on different machines that communicate and coordinate actions in order to appear as a single coherent system to the end-user
   \item organizing resources via network with more latency, less bandwidth, and higher error rate
-  \item Vs parallel systems
+  \item compared to parallel systems
   \begin{itemize}
     \item Distributed has multiple (distributed users) vs parallel designed for single user or user process
     \item Parallel has less security issues
@@ -109,19 +110,19 @@
   \end{itemize}
   \item Migrating Communication Sessions
   \begin{itemize}
-    \item need to reestablish and map gloabl state, such as network sockets
+    \item need to reestablish and map global state, such as network sockets
     \item higher level network name
-    \item edge cases, such as what happens when a process move mid  \item transmission
+    \item edge cases, such as what happens when a process move mid-transmission
   \end{itemize}
 \end{itemize}
 
 \question{Networking}
 
 \begin{itemize}
-  \item LAN:  Local Area Network a homeogeneous network
+  \item LAN:  Local Area Network a homogenous network
   \begin{itemize}
     \item to communicate broadcast (yell) and all stations hear the broadcast
-    \item station have station id or LAN Address and messages have sender and reciever id
+    \item station have station id or LAN Address and messages have sender and receiver id
     \begin{itemize}
       \item everyone can hear other stations messages but ignore it unless diagnostic or malicious
     \end{itemize}
@@ -147,9 +148,9 @@
   \begin{itemize}
     \item IP4
     \begin{itemize}
-      \item Class A (huge): 8 bits(nework) + 24 bits (host) address begin with 0
-      \item Class B (big): 16 bits(nework) + 16 bits (host) address begin with 10
-      \item Class C (small): 24 bits(nework) + 8 bits (host) addess begin with 110
+      \item Class A (huge): 8 bits(network) + 24 bits (host) address begin with 0
+      \item Class B (big): 16 bits(network) + 16 bits (host) address begin with 10
+      \item Class C (small): 24 bits(network) + 8 bits (host) address begin with 110
     \end{itemize}
     \item IP6
     \begin{itemize}
@@ -165,7 +166,7 @@
 \question{incomplete}
 
 \begin{itemize}
-    \item Dynamic Host Configuration Protocol (DHCP) allows IP addresses to be assiged on a temporary or quasi-permant basis
+    \item Dynamic Host Configuration Protocol (DHCP) allows IP addresses to be assigned on a temporary or quasi-permant basis
     \begin{itemize}
       \item DHCP is great for clients -- but not for servers: Servers need to have well-known addresses
     \end{itemize}
@@ -175,6 +176,7 @@
 
 \begin{itemize}
 \item \url{http://www.andrew.cmu.edu/course/15-440-f14/index/lecture_index.html}
+\item \url{https://blog.stackpath.com/distributed-system/}
 \end{itemize}
 
 \end{document}

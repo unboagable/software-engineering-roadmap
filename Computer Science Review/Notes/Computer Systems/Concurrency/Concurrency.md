@@ -3,7 +3,7 @@
 ## General
 
 * concurrency refers to the general concept of a system with multiple, simultaneous activities
- *parallelism refers to the use of concurrency to make a system run faster
+* parallelism refers to the use of concurrency to make a system run faster
 
 ## Resources
 
