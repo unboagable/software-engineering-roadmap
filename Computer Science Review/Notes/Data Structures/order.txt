@@ -5,4 +5,4 @@ Hash Table
 Dictionary/Map
 Trees
 Graph
-General
+General(Data Structures)

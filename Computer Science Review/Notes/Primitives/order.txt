@@ -1,4 +1,4 @@
-gereral primitives
+gereral(primitives)
 pointers
 ints
 bit manipulation
