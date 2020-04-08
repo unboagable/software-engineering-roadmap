@@ -14,7 +14,7 @@
 * system call: special function, passes control to OS and saves shell context, creates new context (hello) and gives it control
 * scheduling: kernel decides to preempt the current process and restart a previously preempted process
   * handled by code in the kernel called scheduler
-* sum: decision: scheduling, act: context switch
+* in summary decision: scheduling, act: context switch
 
 ## Threads
 

@@ -8,7 +8,7 @@ a computer program that translates computer code written in one programming lang
 
 * hello.c (source program, text)
 * hello.i (modified source program, text) preprocessor (cpp)
-  * modifies according to $\#$ directives ($\#$include$\textless$stdio.h$\textgreater$)
+* modifies according to # directives (#include<stdio.h>)
 * hello.s (assembly program, text) compiler (cc1)
   * assembly  \item language program (statement equals 1 low level machine language instruction)
   * assembly language common compiler output for different high level languages
