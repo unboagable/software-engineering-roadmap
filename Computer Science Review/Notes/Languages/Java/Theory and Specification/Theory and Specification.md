@@ -53,6 +53,10 @@ class Dog{
 
 ## Overriding
 
+* overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes
+* final methods can not be overridden
+* you can call parent class method in overriding method using super keyword
+
 ## Access Modifiers
 
 * public
