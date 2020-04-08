@@ -7,4 +7,6 @@ Backpropagation is the central mechanism by which neural networks learn. It is t
 # Sources:
 
 http://neuralnetworksanddeeplearning.com/chap2.html
-https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-w • https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-w • https://pathmind.com/wiki/backpropagation
+https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-w • 
+https://medium.com/datathings/neural-networks-and-backpropagation-explained-in-a-simple-w • 
+https://pathmind.com/wiki/backpropagation

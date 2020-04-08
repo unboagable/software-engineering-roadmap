@@ -1,7 +1,7 @@
 # Languages
 
-## [General(Languages)]()
-## [Java]()
+## [General(Languages)](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/General(Languages)/General(Languages).md)
+## [Java](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/Java/Java.md)
 
 [Theory and Specification](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Languages/Java/Theory%20and%20Specification/Theory%20and%20Specification.md)
 
