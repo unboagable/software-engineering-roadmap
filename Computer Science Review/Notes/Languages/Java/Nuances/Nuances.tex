@@ -67,11 +67,10 @@
 \begin{itemize}
   \item Getter and setter  
   \item Override and super
-  \item Java outmatically collects garbage  
+  \item Java automatically collects garbage  
   \item \&\&/$\mid\mid$ checks left first
   \item + strings makes a new string every time, if you want to do in a loop use stringbuilder(reduce memory)
   \item Everything in Java not explicitly set to something, is initialized to a zero value
-
   \begin{itemize}
     \item references (anything that holds an object):null
     \item int/short/byte:0
@@ -79,20 +78,13 @@
     \item booleans: false.
     \item array of something, all entries are also zeroed
   \end{itemize}
-
 \end{itemize}
 
-\question{Useful built in functions}
+\question{Virtual}
 
 \begin{itemize}
-  \item Arrays
-\begin{itemize}
-  \item Arrays.binarySearch(arr, target)
-  \begin{itemize}
-    \item Negative value shows where it should be
-  \end{itemize}
-  \item Arrays.sort(arr)
-\end{itemize}
+  \item a virtual function (or method) is a function whose behavior can be overridden within an inheriting class by a function with the same signature to provide the polymorphic behavior
+  \item according to definition, every non-static method in JAVA is by default virtual method except final and private methods
 \end{itemize}
 
 \question{Switch Statement}
@@ -212,10 +204,24 @@ ex: Tiger
 	}
 \end{lstlisting}
 
+\question{Useful built in functions}
+
+\begin{itemize}
+  \item Arrays
+\begin{itemize}
+  \item Arrays.binarySearch(arr, target)
+  \begin{itemize}
+    \item Negative value shows where it should be
+  \end{itemize}
+  \item Arrays.sort(arr)
+\end{itemize}
+\end{itemize}
+
 \question{Sources}
 
 \begin{itemize}
 \item \url{https://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm}
+\item \url{https://www.jitendrazaa.com/blog/java/virtual-function-in-java/}
 \end{itemize}
 
 \end{document}

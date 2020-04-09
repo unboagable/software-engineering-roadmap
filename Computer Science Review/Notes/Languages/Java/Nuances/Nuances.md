@@ -1,6 +1,6 @@
-Nuances
+# Nuances
 
-# General Tips
+## General Tips
 
 *  Getter and setter  
 *  Override and super
@@ -13,3 +13,14 @@ Nuances
     * float/double:0.0
     * booleans: false.
     * array of something, all entries are also zeroed
+    
+## Virtual
+
+* a virtual function (or method) is a function whose behavior can be overridden within an inheriting class by a function with the same signature to provide the polymorphic behavior
+* according to definition, every non-static method in JAVA is by default virtual method except final and private methods
+
+## Sources
+
+https://www.cs.utexas.edu/~scottm/cs307/codingSamples.htm
+
+https://www.jitendrazaa.com/blog/java/virtual-function-in-java/

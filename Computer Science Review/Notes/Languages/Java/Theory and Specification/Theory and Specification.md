@@ -57,6 +57,24 @@ class Dog{
 * final methods can not be overridden
 * you can call parent class method in overriding method using super keyword
 
+## Polymorphism
+
+* polymorphism is the ability of an object to take on many forms
+* the most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object
+
+## Abstraction
+
+* abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user
+* abstraction is achieved using abstract classes and interfaces
+
+## Encapsulation
+
+* encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit
+* the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class, also known as data hiding
+* encapsulation in Java 
+  * declare the variables of a class as private
+  * provide public setter and getter methods to modify and view the variables values
+
 ## Access Modifiers
 
 * public
@@ -73,6 +91,15 @@ class Dog{
   * the same class and any class in the same package has access
   * protected minus the subclass unless subclass is in package
 * Static: Belongs to class not an instance of the class
+
+## Type Classifications
+
+* Concrete Types
+
+## Generics
+
+* Definition
+  * generics are a facility of generic programming
 
 ## Sources
 
