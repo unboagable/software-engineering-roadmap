@@ -4,11 +4,11 @@
 
 [Queue](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Queues/Queues.md)
 
-[Stacks]()
+[Stacks](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Stacks/Stacks.md)
 
-[Hash Tables]()
+[Hash Tables](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Hash%20Tables/Hash%20Tables.md)
 
-[Dictionary/Map]()
+[Dictionary/Map](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Dictionary-Map/Dictionary%20-%20Map.md)
 
 [Trees]()
 
