@@ -1,6 +1,6 @@
 # Computer Science Review
 
-## [Primitives]()
+## Primitives
 
 ## Big-O Cheat Sheet
 
@@ -8,11 +8,16 @@
 
 [Linked Lists](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Linked%20Lists/Linked%20Lists.md)
 
-Queue
-Stacks
-Hash Table
-Dictionary/Map
+[Queue](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Queues/Queues.md)
+
+[Stacks](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Stacks/Stacks.md)
+
+[Hash Table](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Hash%20Tables/Hash%20Tables.md)
+
+[Dictionary/Map](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Dictionary-Map/Dictionary%20-%20Map.md)
+
 Trees
+
 Graph
 
 [General(Data Structures)](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/General(Data%20Structures)/General(Data%20Structures).md)
@@ -30,6 +35,10 @@ Graph
 ##### [Deterministic](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Deterministic/Deterministic.md)
 
 [Dynamic Programming](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Deterministic/Dynamic%20Programming/Dynamic%20Programming.md)
+
+## Design
+
+[System Design](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Design/System%20Design/System%20Design.md)
 
 ## [Computer Systems](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Systems/Computer%20Systems.md)
 
