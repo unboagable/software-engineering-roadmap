@@ -2,4 +2,5 @@ software design
 design 4 change
 d 4 reuse
 d 4 robustness
+design patterns
 system design

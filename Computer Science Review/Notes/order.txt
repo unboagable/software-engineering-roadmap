@@ -1,9 +1,10 @@
 title
+general
+discrete math
 primitives
 Big-O Cheat Sheet
 data structures
 algorithms
-discrete math
-general
+design
 computer systems
 languages
