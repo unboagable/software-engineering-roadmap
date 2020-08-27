@@ -14,7 +14,7 @@
 
 * Permutations (care about order)
   * place n objects in k positions
-  * $$ \Myperm{k} = \frac{n!}{(n-k)!}\quad $$
+  * <img src="https://render.githubusercontent.com/render/math?math=\Myperm{k} = \frac{n!}{(n-k)!}\quad">
 * combinations (dont care about order)
   * divide by n! because compared to permutation n places(order) to place first choice, n-1 to place second...
   *  
