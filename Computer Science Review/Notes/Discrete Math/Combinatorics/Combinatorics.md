@@ -14,7 +14,10 @@
 
 * Permutations (care about order)
   * place n objects in k positions
-  * ```math k = n!/(n-k)!```
+  * 
+  ```math 
+  ^n P_k = n!/(n-k)!
+  ```
 * combinations (dont care about order)
   * divide by n! because compared to permutation n places(order) to place first choice, n-1 to place second...
   *  
