@@ -4,11 +4,11 @@
 
 ```java
 class Queue {
-    Node first, last;
+    Node front, back;
     void enqueue(Object item) {
-        if (!first){
+        if (!front){
             back = new Node(item);
-            first = back;
+            front = back;
         } else {
             back.next = new Node(item);
             back = back.next;
