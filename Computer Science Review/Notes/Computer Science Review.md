@@ -1,6 +1,6 @@
 # [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Title/Title%20page.md)
 
-## General
+## [General](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/General/General.md)
 
 ## Discrete Math
 
