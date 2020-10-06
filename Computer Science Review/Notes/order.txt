@@ -5,6 +5,6 @@ primitives
 Big-O Cheat Sheet
 data structures
 algorithms
-design
+design-todo
 computer systems
 languages
