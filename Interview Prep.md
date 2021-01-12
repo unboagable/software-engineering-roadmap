@@ -26,9 +26,11 @@
 
 * Communication
   * ask clarifying questions
+  * discuss design decisions and implementation trade-offs
 * Speed
   * practice coding quickly
-* Quality –  
+  * get a working solution first
+* Quality
   * write clean/bug free code
   * iteratively fix bugs and optimize the solution
 
