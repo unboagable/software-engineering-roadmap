@@ -1,5 +1,16 @@
 # Interview Prep
 
+## Advice and tips
+
+* Spend a couple days (2-3) studying the subject matter and CS fundamentals
+  * data structures, object-oriented design, and algorithms
+  * ex: Array, (O)n, binary trees, link list, integers, hash map, traversals, recursions, etc.
+  * go back to your college textbooks
+* Spend a week or 2 practiing problems and practicing mock interviews
+* Line up interviews in rounds so you can pace yourself and improve
+  * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
+  * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
+
 ## Practice
 
 * [Pramp](https://www.pramp.com/#/)
@@ -9,3 +20,25 @@
 
 * [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
 * [System Design](https://github.com/checkcheckzz/system-design-interview)
+  * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
+
+## Interview Criteria
+
+* Communication
+  * ask clarifying questions
+* Speed
+  * practice coding quickly
+* Quality –  
+  * write clean/bug free code
+  * iteratively fix bugs and optimize the solution
+
+## More
+
+* http://www.geeksforgeeks.org/ 
+* http://www.coderust.com/ 
+* https://gist.github.com/TSiege/cbb0507082bb18ff7e4b 
+* http://bigocheatsheet.com/ 
+* http://codingforinterviews.com/practice 
+* https://www.topcoder.com/ 
+* www.Stackoverflow.com 
+* https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/ 
