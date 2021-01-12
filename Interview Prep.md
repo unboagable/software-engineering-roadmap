@@ -36,11 +36,11 @@
 
 ## More
 
-* http://www.geeksforgeeks.org/ 
+* [www.Stackoverflow.com](www.Stackoverflow.com)
+* [http://bigocheatsheet.com/](http://bigocheatsheet.com/)
+* [http://www.geeksforgeeks.org/](http://www.geeksforgeeks.org/)
 * http://www.coderust.com/ 
-* https://gist.github.com/TSiege/cbb0507082bb18ff7e4b 
-* http://bigocheatsheet.com/ 
+* https://gist.github.com/TSiege/cbb0507082bb18ff7e4b
 * http://codingforinterviews.com/practice 
 * https://www.topcoder.com/ 
-* www.Stackoverflow.com 
 * https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/ 
