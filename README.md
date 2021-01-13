@@ -4,8 +4,10 @@
 
 ## Development Cycle
 
-* Git
+* Distributed version-control system
+  * Git
   * [Commit Messages](https://chris.beams.io/posts/git-commit/)
+* [Design Documents](https://www.industrialempathy.com/posts/design-docs-at-google/)
   
 ## Start Resources
 
