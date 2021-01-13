@@ -18,11 +18,11 @@
 ## Start Resources
 
 * Courses
+  * [Free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [Free beginner courses](https://www.codecademy.com/)
   * https://www.coursera.org/
   * https://www.udacity.com/
 * [Free programming books](https://github.com/EbookFoundation/free-programming-books)
-* [Free online programming courses](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   
 ## Knowledge Space
 
