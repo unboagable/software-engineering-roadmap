@@ -6,14 +6,18 @@ Getting started in a career in software engineering might be daunting but there 
 
 * start learning the basics of programming
   * what is software, what is a program, how do we get from 1's and 0's to complex data, numbers, and videos?
-  * basic courses
+  * take a look a the basic courses and see if you can follow along and go through them
+    * try coding any assignments yourself or implementing any data structure or algorithm you learn yourself
 
 
 ## Courses
 
 * Basics
-  * [CMU 15-112](https://www.cs.cmu.edu/~112n18/schedule.html)
-    * Carnegie Mellon's computer science major entry class, [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
+  * Basic mathematics and logic foundations
+  * [Intro/Fundamentals of Programming](https://www.cs.cmu.edu/~112n18/schedule.html)
+    * 15-112 Carnegie Mellon's computer science major entry class, [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
+  * [Algorithms]
+  * [Data Structures]
 * Others
   * [Free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [Free beginner courses](https://www.codecademy.com/)

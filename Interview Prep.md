@@ -16,11 +16,16 @@
 * [Pramp](https://www.pramp.com/#/)
 * [Leetcode](https://leetcode.com/problemset/all/)
 
-## Study
+## Interview Topics/Sections
 
-* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
+* Coding
+* Algorithm Design and Analysis
+  * Big O notation
 * [System Design](https://github.com/checkcheckzz/system-design-interview)
   * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
+* Open-Ended Discussion
+  * professional background and history
+  * technical interests and passions
 
 ## Interview Criteria
 
@@ -33,6 +38,10 @@
 * Quality
   * write clean/bug free code
   * iteratively fix bugs and optimize the solution
+  
+## Subject Matter
+
+* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
 
 ## More
 
