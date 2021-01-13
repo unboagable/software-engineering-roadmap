@@ -16,8 +16,8 @@ Getting started in a career in software engineering might be daunting but there 
   * Basic mathematics and logic foundations
   * [Intro/Fundamentals of Programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class, [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
-  * [Algorithms]
-  * [Data Structures]
+  * Algorithms
+  * Data Structures
 * Others
   * [Free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [Free beginner courses](https://www.codecademy.com/)
