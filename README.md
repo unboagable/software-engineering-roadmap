@@ -23,9 +23,11 @@
   * https://www.coursera.org/
   * https://www.udacity.com/
 * [Free programming books](https://github.com/EbookFoundation/free-programming-books)
+* [Computer Science Review Notes](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
   
-## Knowledge Space
+## Other Resources
 
-* www.Stackoverflow.com
-* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
+* Debugging
+  * www.Stackoverflow.com
+
 
