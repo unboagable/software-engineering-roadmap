@@ -5,10 +5,15 @@
 ## Development Cycle
 
 * Tools
-  * Git
-    * Distributed version-control system
+  * Distributed version-control system
+    * Git
     * [Commit Messages](https://chris.beams.io/posts/git-commit/)
+  * IDE
+    * [Intellij](https://www.jetbrains.com/idea/download)
+    * [Eclipse](https://www.eclipse.org/downloads/)
+    * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 * [Design Documents](https://www.industrialempathy.com/posts/design-docs-at-google/)
+* [Code Reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
   
 ## Start Resources
 
@@ -18,5 +23,6 @@
   
 ## Knowledge Space
 
-* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
 * www.Stackoverflow.com
+* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
+
