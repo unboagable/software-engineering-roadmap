@@ -1,11 +1,11 @@
 # Trees
 
-## [Trie]()
+## [Trie](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Trees/Tries/Tries.md)
 
-## [Heap]()
+## [Heap](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Trees/Heap/Heap.md)
 
-## [BST]()
+## [BST](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Trees/Binary%20Search%20Tree/Binary%20Search%20Trees.md)
 
-[Common]()
+[Common BST]()
 
-[Treap]()
+[Treap](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Trees/Binary%20Search%20Tree/Treap/Treap.md)

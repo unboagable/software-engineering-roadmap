@@ -95,7 +95,7 @@
 \begin{itemize}
   \item shape depends on insertions
   \item keys has to be compared when inserting or searching
-  \item height grows √n, which grows much faster than log n
+  \item height grows (todo: square root) n, which grows much faster than log n
 \end{itemize}
 
   \item uses
@@ -167,7 +167,7 @@
       \item Steps to consider when deleting a node in an AVL tree are the following:
 \begin{itemize}
          \item If node X is a leaf or has only one child, skip to step 5 with Z:=X.
-         \item Otherwise, determine node Y by finding the largest[citation needed] node in node X's left subtree (the in      \item order predecessor of X − it does not have a right child) or the smallest in its right subtree (the in      \item order successor of X − it does not have a left child).
+         \item Otherwise, determine node Y by finding the largest[citation needed] node in node X's left subtree (the in -order predecessor of X (todo: then) it does not have a right child) or the smallest in its right subtree (the in-order successor of X (todo: then) it does not have a left child).
          \item Exchange all the child and parent links of node X with those of node Y. In this step, the in      \item order sequence between nodes X and Y is temporarily disturbed, but the tree structure doesn't change.
          \item Choose node Z to be all the child and parent links of old node Y = those of new node X.
          \item If node Z has a subtree (which then is a leaf), attach it to Z's parent.
