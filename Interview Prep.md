@@ -3,7 +3,7 @@
 ## Advice and tips
 
 * Spend a couple days (2-3) studying the subject matter and CS fundamentals
-  * [data structures](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
+  * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
   * ex: array, [(O)n](https://www.bigocheatsheet.com/), binary trees, link list, integers, hash map, traversals, recursions, etc.
   * go back to your college textbooks
 * Spend a week or 2 practiing problems and practicing mock interviews
@@ -41,7 +41,7 @@
   
 ## Subject Matter
 
-* [Computer Science Review](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
+* [Computer Science Review](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
 
 ## More
 

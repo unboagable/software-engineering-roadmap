@@ -17,8 +17,8 @@ Getting started in a career in software engineering might be daunting but there 
   * mathematics and logic foundations
   * [Intro/Fundamentals of Programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class, [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
-  * [algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
-  * [data structures](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md)
+  * [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
+  * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md)
 * Others
   * [Free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [Free beginner courses](https://www.codecademy.com/)
@@ -31,5 +31,5 @@ Getting started in a career in software engineering might be daunting but there 
 
 ## Notes
 
-* [Computer Science Review Notes](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
+* [Computer Science Review Notes](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Computer%20Science%20Review.md)
 
