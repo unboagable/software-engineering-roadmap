@@ -6,7 +6,8 @@
   * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
   * ex: [arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Primitives/Arrays/Arrays.md), [(O)n](https://www.bigocheatsheet.com/), binary trees, link list, integers, hash map, traversals, recursions, etc.
   * go back to your college textbooks
-* Spend a week or 2 practiing problems and practicing mock interviews
+  * pick your favorite data structure and implement it
+* Spend a week or 2 practicing problems and practicing mock interviews
 * Line up interviews in rounds so you can pace yourself and improve
   * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
   * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
