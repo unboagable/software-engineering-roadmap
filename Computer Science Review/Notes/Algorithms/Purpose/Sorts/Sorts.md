@@ -9,11 +9,11 @@
 
 * simplest: selection
 * most efficient: mergeSort
-* insertion - best n average $n^2$ worst $n^2$
-* selection - best $n^2$ average $n^2$ worst $n^2$
-* merge - best $nlog n$ average $nlog n$ worst $nlog n$
-* heap - best $nlog n$ average $nlog n$ worst $nlog n$
-* quick - best $nlog n$ average $nlog n$ worst $n^2$
+* insertion - best `O(n)` average `O(n^2)` worst `O(n^2)`
+* selection - best `O(n^2)` average `O(n^2)` worst `O(n^2)`
+* merge - best `O(nlog n)` average `O(nlog n)` worst `O(nlog n)`
+* heap - best `O(nlog n)` average `O(nlog n)` worst `O(nlog n)`
+* quick - best `O(nlog n)` average `O(nlog n)` worst `O(n^2)`
 
 ## Classifications
 
