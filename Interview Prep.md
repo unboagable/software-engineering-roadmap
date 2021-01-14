@@ -1,6 +1,6 @@
 # Interview Prep
 
-## Advice and tips
+## Advice and Tips
 
 * Spend a couple days (2-3) studying the subject matter and CS fundamentals
   * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)

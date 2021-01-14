@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  7 APR 2020 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  14 JAN 2021 18:15
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **Classification.tex
 (./Classification.tex
@@ -393,36 +392,36 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 155.
+LaTeX Font Info:    Try loading font information for U+msa on input line 138.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 155.
+LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (238.00107pt too wide) in paragraph at lines 155--156
+Overfull \hbox (238.00107pt too wide) in paragraph at lines 138--139
 [][]$\OT1/cmtt/m/n/10.95 https : / / www . quora . com / Which-[]are-[]the-[]10
 -[]algorithms-[]every-[]computer-[]science-[]student-[]must-[]implement-[]at-[]
 least-[]once-[]in-[]life$[] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./Classification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `Classification.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
  7939 strings out of 492616
  115940 string characters out of 6129482
- 403242 words of memory out of 5000000
+ 404242 words of memory out of 5000000
  11776 multiletter control sequences out of 15000+600000
  9415 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -432,7 +431,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Classification.pdf (2 pages, 64407 bytes).
+Output written on Classification.pdf (2 pages, 62701 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
