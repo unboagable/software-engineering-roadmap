@@ -8,6 +8,7 @@ Getting started in a career in software engineering might be daunting but there 
   * what is software, what is a program, how do we get from 1's and 0's to complex data, numbers, and videos?
   * take a look a the basic courses and see if you can follow along and go through them
     * try coding any assignments yourself or implementing any data structure or algorithm you learn yourself
+* [coding interview university](https://github.com/jwasham/coding-interview-university)
 
 
 ## Courses
