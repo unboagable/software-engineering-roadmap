@@ -18,6 +18,6 @@
   * [Common BST]()
   * [Treap](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Trees/Binary%20Search%20Tree/Treap/Treap.md)
 
-Graph
+[Graph](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Graph/Graph.md)
 
 General(Data Structures)
