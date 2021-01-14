@@ -26,4 +26,4 @@ public ArrayList<String> merge(String[] words, String[] more) {
 
 ## Sources
 
-* https://www.coursera.org/lecture/data-structures/arrays-OsBSF}
+* https://www.coursera.org/lecture/data-structures/arrays-OsBSF
