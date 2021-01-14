@@ -1,6 +1,6 @@
 # Getting Started
 
-Getting started in a career in software engineering might be daunting but there are plenty of resources and online communities to support and encourage your development.
+Getting started might be daunting but there are plenty of resources and online communities to support and encourage your development.
 
 ## Guide
 
