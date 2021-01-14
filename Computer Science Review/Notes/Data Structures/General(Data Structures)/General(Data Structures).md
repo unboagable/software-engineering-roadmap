@@ -8,8 +8,8 @@
   * if they ever meet their is a cycle
   * you can also use this algorithm (with more steps) to find start of cycle and the length of the cycle
 * applicable data structures
-  * [linked lists](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Linked%20Lists/Linked%20Lists.md)
-  * [graph](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Graph/Graph.md)
+  * [linked lists](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Linked%20Lists/Linked%20Lists.md)
+  * [graph](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Graph/Graph.md)
 
 ## General Common Issues
 
