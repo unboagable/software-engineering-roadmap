@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  26 AUG 2020 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  14 JAN 2021 06:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Queues.tex
-(./Queues.tex
+**Stacks.tex
+(./Stacks.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -307,8 +307,8 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-(./Queues.aux)
-\openout1 = `Queues.aux'.
+(./Stacks.aux)
+\openout1 = `Stacks.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
@@ -371,18 +371,18 @@ LaTeX Info: Redefining \ref on input line 54.
 LaTeX Info: Redefining \pageref on input line 54.
 LaTeX Info: Redefining \nameref on input line 54.
 
-(./Queues.out) (./Queues.out)
+(./Stacks.out) (./Stacks.out)
 \@outlinefile=\write3
-\openout3 = `Queues.out'.
+\openout3 = `Stacks.out'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 89.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -393,20 +393,20 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
-(./Queues.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
-Package rerunfilecheck Info: File `Queues.out' has not changed.
+(./Stacks.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package rerunfilecheck Info: File `Stacks.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 8245 strings out of 492616
- 118121 string characters out of 6129482
- 414242 words of memory out of 5000000
- 12081 multiletter control sequences out of 15000+600000
+ 8240 strings out of 492616
+ 118043 string characters out of 6129482
+ 411242 words of memory out of 5000000
+ 12080 multiletter control sequences out of 15000+600000
  4971 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,11n,43p,222b,1135s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -415,10 +415,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Queues.pdf (1 page, 53352 bytes).
+Output written on Stacks.pdf (1 page, 54523 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
+ 54 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

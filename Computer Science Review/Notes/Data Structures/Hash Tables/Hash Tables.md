@@ -42,6 +42,6 @@ public HashMap<Integer, Student> buildMap(Student[] students) {
 
 ## Notes
 
-* Alternative to array to implement stack and queue
-* Allows any length
+* alternative to array to implement stack and queue
+* allows any length
 * can be made more efficient with better fit hash function

@@ -43,13 +43,13 @@
 \renewcommand{\part}[1] {\vspace{.10in} {\bf (#1)}}
 
 \newcommand{\myname}{Chang-Hyun Mungai}
-\newcommand{\myhwnum}{Hash Table Notes}
+\newcommand{\myhwnum}{Queues Notes}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt plus 1pt}
  
 \pagestyle{fancyplain}
-\lhead{\fancyplain{}{\textbf{\myhwnum}}}      % Note the different brackets!
+\lhead{\fancyplain{}{\textbf{HW\myhwnum}}}      % Note the different brackets!
 
 \begin{document}
 
@@ -59,67 +59,38 @@
 
 \thispagestyle{plain}
 \begin{center}                  % Center the following lines
-{\Large Hash Tables} \\
+{\Large Queues} \\
 \end{center}
 
-\question{Big O}
-
-\begin{itemize}
-  \item space O(n)
-  \item time
-\begin{itemize}
-  \item search worst O(n), average O(1)
-  \item insert worst O(n), average O(1)
-  \item delete worst O(n), average O(1)
-\end{itemize}
-\end{itemize}
-
-\question{Advantages}
-
-\begin{itemize}
-  \item faster than other structures on large entries
-  \item efficient when max entries known (dont have to resize)
-\end{itemize}
-
-\question{Disadvantages}
-
-\begin{itemize}
-  \item have to resize for more data
-\end{itemize}
-
-\question{Uses}
-
-\begin{itemize}
-  \item associative arrays (arrays index through arbitrary strings)
-  \item database indexing
-  \item caches
-  \item sets (?)
-  \item object rep (key is method or object, value is pointer to member or method)
-\end{itemize}
-
-\question{Properties}
-
-\begin{itemize}
-  \item keys have to be hash able (able to compute numeric value from it)
-  \item entries in no particular order
-\end{itemize}
-
-\question{Creating a Hash Table}
+\question{Implementing a Queue}
 
 \begin{lstlisting}
-public HashMap<Integer, Student> buildMap(Student[] students) {
-	HashMap<Integer, Student> map = new HashMap<Integer, Student>();
-	for (Student s : students) map.put(s.getId(), s);
-	return map;
+class Queue {
+	Node front, back;
+	void enqueue(Object item) {
+		if (!front){
+			back = new Node(item);
+			front = back;
+		} else {
+			back.next = new Node(item);
+			back = back.next;
+		}
+	}
+	Node dequeue(Node n) {
+		if (front != null) {
+			Object item = front.data;
+			front = front.next;
+			return item;
+		}
+		return null;
+	}
 }
 \end{lstlisting}
 
 \question{Notes}
 
 \begin{itemize}
-  \item Alternative to array to implement stack and queue
-  \item Allows any length
-  \item can be made more efficient with better fit hash function
+  \item first in first out
 \end{itemize}
 
 \end{document}

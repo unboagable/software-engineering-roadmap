@@ -27,4 +27,4 @@ class Queue {
 
 ## Notes
 
-First in First out
+first in first out

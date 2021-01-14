@@ -23,4 +23,4 @@ class Stack {
 
 ## Notes
 
-Last in First out
+last in first out
