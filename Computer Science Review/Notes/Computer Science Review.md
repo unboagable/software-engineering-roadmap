@@ -28,6 +28,9 @@ Graph
 
 ## [Algorithms](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
 
+### [Purpose](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Purpose/Purpose.md)
+#### [Sorts](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Purpose/Sorts/Sorts.md)
+
 ### [Artificial Intelligence](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Artificial%20Intelligence.md)
 #### [Machine Learning](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Machine%20Learning.md)
 ##### [Nondeterministic](https://github.com/unboagable/engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Artificial%20Intelligence/Machine%20Learning/Nondeterministic/Nondeterministic.md)

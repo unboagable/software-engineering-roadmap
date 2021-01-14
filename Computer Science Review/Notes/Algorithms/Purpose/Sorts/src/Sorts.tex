@@ -72,27 +72,27 @@
 \question{Accolades}
 
 \begin{itemize}
-\item Simplest-selection
-\item Efficient-MergeSort
-\item insertion best n average $n^2$ worst $n^2$
-\item selection best $n^2$ average $n^2$ worst $n^2$
-\item merge best $nlog n$ average $nlog n$ worst $nlog n$
-\item heap best $nlog n$ average $nlog n$ worst $nlog n$
-\item quick best $nlog n$ average $nlog n$ worst $n^2$
+\item simplest: selection
+\item most efficient: mergeSort
+\item insertion - best n average $n^2$ worst $n^2$
+\item selection - best $n^2$ average $n^2$ worst $n^2$
+\item merge - best $nlog n$ average $nlog n$ worst $nlog n$
+\item heap - best $nlog n$ average $nlog n$ worst $nlog n$
+\item quick - best $nlog n$ average $nlog n$ worst $n^2$
 \end{itemize}
 
 \question{Classifications}
 
 \begin{itemize}
-\item Simple (insertion, selection)
-\item Efficient (Merge, Heap, quick)
-\item Bubble
-\item Distribution (bucket)
-\item Exchange sorts (bubble sort, quicksort)
-\item Selection sorts (shaker sort, heapsort)
+\item simple (insertion, selection)
+\item efficient (Merge, Heap, quick)
+\item bubble
+\item distribution (bucket)
+\item exchange sorts (bubble sort, quicksort)
+\item selection sorts (shaker sort, heapsort)
 \end{itemize}
 
-\question{insertion}
+\question{Insertionsort}
 
 \begin{itemize}
 \item take one element at a time insert into place in another list
@@ -101,7 +101,6 @@
 \item 3rd in between after or before
 \end{itemize}
 
-
 \question{Selectionsort}
 
 \begin{itemize}
@@ -109,45 +108,45 @@
 \item next smallest, place
 \end{itemize}
 
-\question{Quickort}
+\question{Quicksort}
 
 \begin{itemize}
-\item Pick an element, called a pivot, from the array.
-\item Reorder the array so that all elements with values less than the pivot come before the pivot, all elements with values greater than the pivot come after it (equal values can go either way)
-\item Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values
+\item pick an element, called a pivot, from the array.
+\item reorder the array so that all elements with values less than the pivot come before the pivot, all elements with values greater than the pivot come after it (equal values can go either way)
+\item recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values
 \end{itemize}
 
-\question{merge}
+\question{Mergesort}
 
 \begin{itemize}
-\item Divide into two lists
-\item Recursively sort 2 lists
+\item divide into two lists
+\item recursively sort 2 lists
 \item merge two lists (add in least of both comparing them first)
 \end{itemize}
 
-\question{bucketsort}
+\question{Bucketsort}
 
 \begin{itemize}
-\item Create buckets by range (0-9,10-19,20-29,etc)
-\item Separate into different buckets
-\item Sort buckets (using either bucketsort, quicksort, what-ever)
+\item create buckets by range (0-9,10-19,20-29,etc)
+\item separate into different buckets
+\item sort buckets (using either bucketsort, quicksort, what-ever)
 \end{itemize}
 
-\question{heapsort}
+\question{Heapsort}
 
 \begin{itemize}
-\item Create heap of all elements
-\item Keep removing max (min) from heap to place into sorted array
+\item create heap of all elements
+\item keep removing max (min) from heap to place into sorted array
 \end{itemize}
 
-\question{bubblesort}
+\question{Bubblesort}
 
 \begin{itemize}
 \item iterate through array swapping consecutive elements if in the wrong order
 \item run until an interation with no swaps
 \end{itemize}
 
-\question{sources}
+\question{Sources}
 
 \begin{itemize}
 \item \url{http://betterexplained.com/articles/sorting-algorithms/}
