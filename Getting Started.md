@@ -15,7 +15,7 @@ Getting started in a career in software engineering might be daunting but there 
 
 * basics
   * mathematics and logic foundations
-  * [Intro/Fundamentals of Programming](https://www.cs.cmu.edu/~112n18/schedule.html)
+  * [Fundamentals of Programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class, [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
   * [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Algorithms/Algorithms.md)
   * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/Computer%20Science%20Review/Notes/Data%20Structures/Data%20Structures.md)
