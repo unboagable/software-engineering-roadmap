@@ -28,7 +28,7 @@ Getting started might be daunting but there are plenty of resources and online c
 
 ## Books
 
-* [free programming books](https://github.com/EbookFoundation/free-programming-books)
+* [free programming books](https://github.com/EbookFoundation/free-programming-books#readme)
 
 ## Notes
 
