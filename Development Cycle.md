@@ -1,15 +1,17 @@
 # Development Cycle
 
-
 ## Tools
 
-* Distributed version-control system
-  * Git
-  * [Commit Messages](https://chris.beams.io/posts/git-commit/)
+* [Text Editor](https://github.com/sindresorhus/awesome#editors)
+  * [Sublime](https://www.sublimetext.com/3)
+  * [Vim](https://www.vim.org/download.php)
 * IDE
   * [Intellij](https://www.jetbrains.com/idea/download)
   * [Eclipse](https://www.eclipse.org/downloads/)
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+* Distributed Version Control System
+  * Git
+  * [Commit Messages](https://chris.beams.io/posts/git-commit/)
 
 ## Design
 
