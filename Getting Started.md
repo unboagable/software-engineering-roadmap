@@ -18,8 +18,6 @@ Getting started might be daunting but there are plenty of resources and online c
   * [fundamentals of programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
-  * [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Algorithms/Algorithms.md)
-  * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Data%20Structures.md)
 * Others
   * [free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [free beginner courses](https://www.codecademy.com/)
