@@ -8,7 +8,7 @@ Getting started might be daunting but there are plenty of resources and online c
   * what is software, what is a program, how do we get from 1's and 0's to complex data, numbers, and videos?
   * take a look a the basic courses and see if you can follow along and go through them
     * try coding any assignments yourself or implementing any data structure or algorithm you learn yourself
-* [coding interview university](https://github.com/jwasham/coding-interview-university)
+* [coding interview university](https://github.com/jwasham/coding-interview-university#coding-interview-university)
 
 
 ## Courses
