@@ -19,7 +19,7 @@ have to resize for more data
 
 ## Uses
 
-* associative arrays (arrays index through arbitrary strings)
+* associative arrays ([arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md) index through arbitrary strings)
 * database indexing
 * caches
 * sets (?)
