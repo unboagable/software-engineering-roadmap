@@ -10,7 +10,7 @@
   * [Eclipse](https://www.eclipse.org/downloads/)
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 * Distributed Version Control System
-  * Git
+  * [Git](https://github.com/tiimgreen/github-cheat-sheet#github-cheat-sheet-)
   * [Commit Messages](https://chris.beams.io/posts/git-commit/)
 
 ## Design

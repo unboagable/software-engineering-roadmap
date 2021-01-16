@@ -4,9 +4,9 @@
 
 ## Discrete Math
 
-## [Primitives](https://github.com/unboagable/software-engineering-roadmap/blob/14dd9ba2a28895be0c4e51913e5bf12d7f262653/computer%20science%20review/Primitives/Primitives.md)
+## [Primitives](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Primitives.md)
 
-[Arrays](https://github.com/unboagable/software-engineering-roadmap/blob/14dd9ba2a28895be0c4e51913e5bf12d7f262653/computer%20science%20review/Primitives/Arrays/Arrays.md)
+[Arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md)
 
 ## Big-O Cheat Sheet
 
