@@ -70,9 +70,9 @@
     * (A $\cap$ B) ' = A ' $\cup$ B '
     * (A $\cup$ B) ' = A ' $\cap$ B '
   * proof
-    * (A $\cup$ B) ' $\subseteq$ A ' $\cap$ B '
-    * A' $\cap$ B ' $\subseteq$ (A $\cup$ B) '
+    * http://latex.codecogs.com/png.latex?\dpi{150}&space;(A&space;\bigcup&space;&space;B)'\subseteq&space;A'&space;\bigcap&space;&space;B
+    * http://latex.codecogs.com/png.latex?\dpi{150}&space;A'&space;\bigcap&space;&space;B'&space;\subseteq&space;(A&space;\bigcup&space;&space;B)'
 
 ## Sources
 
-* https://en.wikibooks.org/wiki/Discrete_Mathematics/Set_theory}
+* https://en.wikibooks.org/wiki/Discrete_Mathematics/Set_theory
