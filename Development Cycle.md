@@ -11,7 +11,6 @@
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 * distributed version control system
   * [Git](https://github.com/tiimgreen/github-cheat-sheet#github-cheat-sheet-)
-  * [Commit Messages](https://chris.beams.io/posts/git-commit/)
 
 ## Design
 
@@ -20,6 +19,11 @@
 ## Collaboration
 
 * [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
+
+## Good Practices
+
+* [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
+* [commit messages](https://chris.beams.io/posts/git-commit/)
 
 ## Advanced Tools
 
