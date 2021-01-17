@@ -18,6 +18,10 @@
 * combinations (dont care about order)
   * divide by n! because compared to permutation n places(order) to place first choice, n-1 to place second...
   * ![alt text](http://latex.codecogs.com/png.latex?\dpi{150}&space;{n&space;\choose&space;k}\quad=\frac{n!}{k!(n-k)!})
+  
+## Binomial Identity
+
+![alt text](http://latex.codecogs.com/png.latex?\dpi{150}&space;(x&plus;y)^n&space;=&space;\sum_{k=0}^n&space;{n&space;\choose&space;k}x^{n-k}y^k&space;=&space;\sum_{k=0}^n&space;{n&space;\choose&space;k}x^{k}y^{n-k}\quad{n&space;\choose&space;0}&space;=&space;{n&space;\choose&space;n}&space;=&space;1&space;\quad&space;\text{for&space;all&space;integers&space;}\quad" title="http://latex.codecogs.com/png.latex?\dpi{150} (x+y)^n = \sum_{k=0}^n {n \choose k}x^{n-k}y^k = \sum_{k=0}^n {n \choose k}x^{k}y^{n-k}\quad{n \choose 0} = {n \choose n} = 1 \quad \text{for all integers }\quad)
 
 ## Sources
 
