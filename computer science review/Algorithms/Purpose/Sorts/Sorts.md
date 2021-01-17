@@ -38,7 +38,7 @@
 
 ## Quicksort
 
-* pick an element, called a pivot, from the array.
+* pick an element, called a pivot, from the [array](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md).
 * reorder the array so that all elements with values less than the pivot come before the pivot, all elements with values greater than the pivot come after it (equal values can go either way)
 * recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values
 

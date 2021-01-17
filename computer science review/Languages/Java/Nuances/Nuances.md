@@ -12,7 +12,7 @@
     * int/short/byte:0
     * float/double:0.0
     * booleans: false.
-    * array of something, all entries are also zeroed
+    * [array](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md) of something, all entries are also zeroed
     
 ## Virtual
 

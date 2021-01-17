@@ -2,13 +2,19 @@
 
 ## [General](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/General/General.md)
 
-## Discrete Math
+## [Discrete Math](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Discrete%20Math.md)
+
+[Probability](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Probability/Probability.md)
+
+[Combinatorics](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Combinatorics/Combinatorics.md)
+
+[Set Theory](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Set%20Theory/Set%20Theory.md)
 
 ## [Primitives](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Primitives.md)
 
 [Arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md)
 
-## Big-O Cheat Sheet
+## [Big-O Cheat Sheet](http://bigocheatsheet.com/)
 
 ## [Data Structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Data%20Structures.md)
 

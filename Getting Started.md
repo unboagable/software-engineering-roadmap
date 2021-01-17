@@ -14,7 +14,7 @@ Getting started might be daunting but there are plenty of resources and online c
 ## Courses
 
 * basics
-  * mathematics and logic foundations
+  * [mathematics and logic foundations](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Discrete%20Math.md)
   * [fundamentals of programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)

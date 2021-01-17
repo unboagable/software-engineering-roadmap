@@ -65,5 +65,5 @@ Node deleteNode(Node head, int d) {
 
 ## Notes
 
-* alternative to array to implement stack and queue
+* alternative to [array](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md) to implement stack and queue
 * allows any length
