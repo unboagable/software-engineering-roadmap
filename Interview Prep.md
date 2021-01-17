@@ -1,20 +1,5 @@
 # Interview Prep
 
-## Advice and Tips
-
-* Spend a couple days (2-3) studying the subject matter and CS fundamentals
-  * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Algorithms/Algorithms.md)
-  * ex: [arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md), [(O)n](https://www.bigocheatsheet.com/), binary trees, link list, integers, hash map, traversals, recursions, etc.
-  * go back to your college textbooks
-  * pick your favorite data structure and implement it
-* Spend a week or 2 practicing problems and practicing mock interviews
-* Line up interviews in rounds so you can pace yourself and improve
-  * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
-  * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
-* Explore roles adjacent to software engineering
-  * [Site Reliability Engineer](https://github.com/mxssl/sre-interview-prep-guide)
-  * [Data Scientist](https://github.com/MrMimic/data-scientist-roadmap#data-scientist-roadmap)
-
 ## Practice
 
 * [Pramp](https://www.pramp.com/#/)
@@ -46,6 +31,21 @@
 ## Subject Matter
 
 * [Computer Science Review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
+
+## Advice and Tips
+
+* Spend a couple days (2-3) studying the subject matter and CS fundamentals
+  * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Algorithms/Algorithms.md)
+  * ex: [arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md), [(O)n](https://www.bigocheatsheet.com/), binary trees, link list, integers, hash map, traversals, recursions, etc.
+  * go back to your college textbooks
+  * pick your favorite data structure and implement it
+* Spend a week or 2 practicing problems and practicing mock interviews
+* Line up interviews in rounds so you can pace yourself and improve
+  * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
+  * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
+* Explore roles adjacent to software engineering
+  * [Site Reliability Engineer](https://github.com/mxssl/sre-interview-prep-guide)
+  * [Data Scientist](https://github.com/MrMimic/data-scientist-roadmap#data-scientist-roadmap)
 
 ## More
 
