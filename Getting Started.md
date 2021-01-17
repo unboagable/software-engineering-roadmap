@@ -5,9 +5,10 @@ getting started might be daunting but there are plenty of resources and online c
 ## Guide
 
 * start learning the basics of programming
-  * what is software, what is a program, how do we get from 1's and 0's to complex data, numbers, and videos?
-  * take a look a the basic courses and see if you can follow along and go through them
-    * try coding any assignments yourself or implementing any data structure or algorithm you learn yourself
+  * what is software, what is a program, how do we get from 1's and 0's to pictures, video games, zip files?
+  * take courses, a good place to start are the [basics](https://github.com/unboagable/software-engineering-roadmap/blob/master/Getting%20Started.md#courses)
+    * ideally you need a class in data structures, algorithms, and a programming class
+    * try coding data structures, algorithms, or experiment with the concepts yourself
 * [coding interview university](https://github.com/jwasham/coding-interview-university#coding-interview-university)
 
 
@@ -16,7 +17,7 @@ getting started might be daunting but there are plenty of resources and online c
 * basics
   * [mathematics and logic foundations](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Discrete%20Math.md)
   * [fundamentals of programming](https://www.cs.cmu.edu/~112n18/schedule.html)
-    * 15-112 Carnegie Mellon's computer science major entry class
+    * 15-112 Carnegie Mellon's computer science major entry programming class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
 * others
   * [free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)

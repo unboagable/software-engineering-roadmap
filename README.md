@@ -8,6 +8,6 @@
   
 ## Other Resources
 
-* Debugging
-  * www.Stackoverflow.com
+* debugging
+  * [stack overflow](www.stackoverflow.com)
 
