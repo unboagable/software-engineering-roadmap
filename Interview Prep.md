@@ -2,54 +2,54 @@
 
 ## Practice
 
-* [Pramp](https://www.pramp.com/#/)
-* [Leetcode](https://leetcode.com/problemset/all/)
+* [pramp](https://www.pramp.com/#/)
+* [leetcode](https://leetcode.com/problemset/all/)
 
 ## Interview Topics/Sections
 
-* Coding
-* Algorithm Design and Analysis
+* coding
+* algorithm design and analysis
   * Big O notation
-* [System Design](https://github.com/checkcheckzz/system-design-interview)
+* [system design](https://github.com/checkcheckzz/system-design-interview)
   * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
-* Open-Ended Discussion
+* open-ended discussion
   * professional background and history
   * technical interests and passions
 
 ## Interview Criteria
 
-* Communication
+* communication
   * ask clarifying questions
   * discuss design decisions and implementation trade-offs
-* Speed
+* speed
   * practice coding quickly
   * get a working solution first
-* Quality
+* quality
   * write clean/bug free code
   * iteratively fix bugs and optimize the solution
   
 ## Subject Matter
 
-* [Computer Science Review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
+* [computer science review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
 
 ## Advice and Tips
 
-* Spend a couple days (2-3) studying the subject matter and CS fundamentals
+* spend a couple days (2-3) studying the subject matter and CS fundamentals
   * [data structures](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Data%20Structures.md), object-oriented design, and [algorithms](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Algorithms/Algorithms.md)
   * ex: [arrays](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Primitives/Arrays/Arrays.md), [(O)n](https://www.bigocheatsheet.com/), binary trees, link list, integers, hash map, traversals, recursions, etc.
   * go back to your college textbooks
   * pick your favorite data structure and implement it
-* Spend a week or 2 practicing problems and practicing mock interviews
-* Line up interviews in rounds so you can pace yourself and improve
+* spend a week or 2 practicing problems and practicing mock interviews
+* line up interviews in rounds so you can pace yourself and improve
   * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
   * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
-* Explore roles adjacent to software engineering
+* explore roles adjacent to software engineering
   * [Site Reliability Engineer](https://github.com/mxssl/sre-interview-prep-guide)
   * [Data Scientist](https://github.com/MrMimic/data-scientist-roadmap#data-scientist-roadmap)
 
 ## More
 
-* www.Stackoverflow.com
+* www.stackoverflow.com
 * http://bigocheatsheet.com/
 * http://www.geeksforgeeks.org/
 * http://www.coderust.com/ 
