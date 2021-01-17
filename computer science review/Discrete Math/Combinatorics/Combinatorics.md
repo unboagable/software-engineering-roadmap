@@ -17,14 +17,7 @@
   * <img src="https://render.githubusercontent.com/render/math?math=\Myperm{k} = \frac{n!}{(n-k)!}\quad">
 * combinations (dont care about order)
   * divide by n! because compared to permutation n places(order) to place first choice, n-1 to place second...
-  *  
-\[
-\Mycomb{k} = \frac{n!}{k!(n-k)!}={n \choose k}\quad
-\]
-
-
-
-
+  * ![alt text](http://latex.codecogs.com/png.latex?\dpi{110}&space;{n&space;\choose&space;k}\quad=\frac{n!}{k!(n-k)!})
 
 ## Sources
 
