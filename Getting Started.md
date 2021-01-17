@@ -18,11 +18,17 @@ Getting started might be daunting but there are plenty of resources and online c
   * [fundamentals of programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
-* Others
+* others
   * [free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [free beginner courses](https://www.codecademy.com/)
   * https://www.coursera.org/
   * https://www.udacity.com/
+  
+## Adjacent Careers
+
+* [developer](https://github.com/kamranahmedse/developer-roadmap#introduction)
+* [site reliability engineer](https://github.com/mxssl/sre-interview-prep-guide)
+* [data scientist](https://github.com/MrMimic/data-scientist-roadmap#data-scientist-roadmap)
 
 ## Books
 
