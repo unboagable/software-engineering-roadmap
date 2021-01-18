@@ -40,10 +40,12 @@
 * [linkedin](https://www.linkedin.com/)
   * have an up to date profile on linkedin
   * recruiters regular run keyword searches looking for candidates and will even reach out
-* [full time guide](https://github.com/cassidoo/getting-a-gig#getting-a-gig-a-guide)
 * internship
   * [detailed guide](https://pittcs.wiki/zero-to-offer/)
   * [internship list](https://github.com/pittcsc/Summer2021-Internships#the-list-)
+* full time
+  * [full time guide](https://github.com/cassidoo/getting-a-gig#getting-a-gig-a-guide)
+  * [full time list](https://github.com/pittcsc/NewGrad-2021#2021-new-grad-applications)
   
   
 ## Subject Matter
