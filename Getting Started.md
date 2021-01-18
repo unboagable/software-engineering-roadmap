@@ -22,6 +22,7 @@ getting started might be daunting but there are plenty of resources and online c
 * others
   * [free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [free beginner courses](https://www.codecademy.com/)
+  * [free online code camp](https://github.com/freeCodeCamp/freeCodeCamp#freecodecamporgs-open-source-codebase-and-curriculum)
   * https://www.coursera.org/
   * https://www.udacity.com/
   
