@@ -35,6 +35,15 @@
   * write clean/bug free code
   * iteratively fix bugs and optimize the solution
   
+## Job Search
+
+* [linkedin](https://www.linkedin.com/)
+  * have an up to date profile on linkedin
+  * recruiters regular run keyword searches looking for candidates and will even reach out
+* internships
+  * [internship list](https://github.com/pittcsc/Summer2021-Internships#the-list-)
+  
+  
 ## Subject Matter
 
 * [computer science review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
