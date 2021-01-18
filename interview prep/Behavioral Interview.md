@@ -11,5 +11,4 @@
   * skills and expertise you are looking to develop
   * preference in backend, front-end, full-stack roles
   * interest in machine learning, security, distributed systems, and/or cloud infrastructure
-  
-  
+* company fit
