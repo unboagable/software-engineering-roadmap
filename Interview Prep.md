@@ -12,9 +12,15 @@
   * Big O notation
 * [system design](https://github.com/checkcheckzz/system-design-interview)
   * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
-* open-ended discussion
+* open-ended discussion (behavioral)
   * professional background and history
+    * talk about projects you've contributed to, the impact they had, they technologies you've used and leveraged
+    * talk about challenging situations in team settings, how did you deal with disagreement? how do you keep shareholders informed? how did you recover from a setback?
   * technical interests and passions
+    * what sort of technologies would you like to work on/with in the future?
+    * what skills and expertise are you looking to develop?
+    * do you enjoy backend, frontend, full-stack?
+    * are you interested in machine learning? security? distributed systems? cloud infrastructure?
 
 ## Interview Criteria
 
