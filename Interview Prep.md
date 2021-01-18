@@ -14,13 +14,16 @@
   * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
 * open-ended discussion (behavioral)
   * professional background and history
-    * talk about projects you've contributed to, the impact they had, they technologies you've used and leveraged
-    * talk about challenging situations in team settings, how did you deal with disagreement? how do you keep shareholders informed? how did you recover from a setback?
+    * projects you've contributed to, the impact they had, the technologies you used/leveraged
+    * challenging situations in team settings
+      * how did you deal with disagreement? 
+      * how do you keep shareholders informed? 
+      * how did you recover from a setback?
   * technical interests and passions
-    * what sort of technologies would you like to work on/with in the future?
-    * what skills and expertise are you looking to develop?
-    * do you enjoy backend, frontend, full-stack?
-    * are you interested in machine learning? security? distributed systems? cloud infrastructure?
+    * technologies you would like to work on/with
+    * skills and expertise you are looking to develop
+    * preference in backend, front-end, full-stack roles
+    * interest in machine learning, security, distributed systems, and/or cloud infrastructure
 
 ## Interview Criteria
 
