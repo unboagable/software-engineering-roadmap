@@ -6,7 +6,7 @@ getting started might be daunting but there are plenty of resources and online c
 
 * start learning the basics of programming
   * what is software, what is a program, how do we get from 1's and 0's to pictures, video games, zip files?
-  * take courses, a good place to start are the [basics](https://github.com/unboagable/software-engineering-roadmap/blob/master/Getting%20Started.md#courses)
+  * take courses, a good place to start are the [courses](https://github.com/unboagable/software-engineering-roadmap/blob/master/Getting%20Started.md#courses)
     * ideally you need a class in data structures, algorithms, and a programming class
     * try coding data structures, algorithms, or experiment with the concepts yourself
 * [coding interview university](https://github.com/jwasham/coding-interview-university#coding-interview-university)
