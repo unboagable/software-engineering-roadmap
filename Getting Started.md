@@ -14,12 +14,12 @@ getting started might be daunting but there are plenty of resources and online c
 
 ## Courses
 
-* basics
+* academic based
   * [mathematics and logic foundations](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Discrete%20Math/Discrete%20Math.md)
   * [fundamentals of programming](https://www.cs.cmu.edu/~112n18/schedule.html)
     * 15-112 Carnegie Mellon's computer science major entry programming class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
-* others
+* online community
   * [free beginner courses](https://www.codecademy.com/)
   * [free online code camp](https://github.com/freeCodeCamp/freeCodeCamp#freecodecamporgs-open-source-codebase-and-curriculum)
   * [free online programming courses](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
