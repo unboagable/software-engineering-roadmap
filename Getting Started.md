@@ -20,9 +20,9 @@ getting started might be daunting but there are plenty of resources and online c
     * 15-112 Carnegie Mellon's computer science major entry programming class
     * [non major entry class](https://www.cs.cmu.edu/~15110-n15/schedule.html)
 * others
-  * [free online programming courses list](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * [free beginner courses](https://www.codecademy.com/)
   * [free online code camp](https://github.com/freeCodeCamp/freeCodeCamp#freecodecamporgs-open-source-codebase-and-curriculum)
+  * [free online programming courses](https://www.reddit.com/r/learnprogramming/comments/4rimxf/heres_a_list_of_234_free_online_programmingcs/)
   * best paid/ad-based
     * [coursera](https://www.coursera.org/)
     * [udacity](https://www.udacity.com/)
