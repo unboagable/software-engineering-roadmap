@@ -47,11 +47,6 @@
   * [full time guide](https://github.com/cassidoo/getting-a-gig#getting-a-gig-a-guide)
   * [full time list](https://github.com/pittcsc/NewGrad-2021#2021-new-grad-applications)
   
-  
-## Subject Matter
-
-* [computer science review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
-
 ## Advice and Tips
 
 * spend a couple of hours research company culture, industry, and product
@@ -80,4 +75,5 @@
 * https://gist.github.com/TSiege/cbb0507082bb18ff7e4b
 * http://codingforinterviews.com/practice 
 * https://www.topcoder.com/ 
-* https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/ 
+* https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
+* [computer science review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
