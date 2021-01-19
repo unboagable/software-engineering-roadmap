@@ -10,6 +10,12 @@
 
 ## [Interview Prep](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md)
 
+* [practice](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md#practice)
+* [interview topics](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md#interview-topics)
+* [interview criteria](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md#interview-criteria)
+* [job search](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md#job-search)
+* [advice and tips](https://github.com/unboagable/software-engineering-roadmap/blob/master/Interview%20Prep.md#advice-and-tips)
+
 ## [Development Cycle](https://github.com/unboagable/software-engineering-roadmap/blob/master/Development%20Cycle.md)
   
 ## Other Resources
