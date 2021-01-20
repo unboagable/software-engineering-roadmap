@@ -14,15 +14,13 @@
 
 ## Good Practices
 
-* plan and design and iterate
+* plan, design, iterate, and document
+  * [commit messages](https://chris.beams.io/posts/git-commit/)
   * [design documents](https://www.industrialempathy.com/posts/design-docs-at-google/)
+  * [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
 * writing clean code
   * [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
-  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction)
-* documentation
-  * [commit messages](https://chris.beams.io/posts/git-commit/)
-* pay attention to 
-  [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
+  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction) 
 
 ## Advanced Tools
 
