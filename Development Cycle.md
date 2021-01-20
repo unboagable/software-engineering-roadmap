@@ -28,3 +28,7 @@
 
 * platform as a service (PaaS)
   * [Docker](https://github.com/veggiemonk/awesome-docker#readme)
+  
+## Debugging
+
+* [stack overflow](www.stackoverflow.com)
