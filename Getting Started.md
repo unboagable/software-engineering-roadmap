@@ -1,6 +1,7 @@
 # Getting Started
 
-Getting started might be daunting but there are plenty of resources and online communities to support and encourage your development. If you are curious about 
+Getting started might be daunting but there are plenty of resources and online communities to support and encourage your development
+If you are curious about 
 
 * what is software?
 * what is a program?
