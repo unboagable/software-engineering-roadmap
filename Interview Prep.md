@@ -77,3 +77,4 @@
 * https://www.topcoder.com/ 
 * https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/
 * [computer science review](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
+* [checklist right before the interview](https://github.com/yangshun/tech-interview-handbook/blob/master/contents/cheatsheet.md#before-interview)
