@@ -1,6 +1,12 @@
 # Getting Started
 
-Getting started might be daunting but there are plenty of resources and online communities to support and encourage your development. If you are curious about what is software, what is a program, how do we get from 1's and 0's to pictures, video games, zip files...your in the right place.
+Getting started might be daunting but there are plenty of resources and online communities to support and encourage your development. If you are curious about 
+
+* what is software?
+* what is a program?
+* how do we get from 1's and 0's to pictures, video games, zip files?
+
+You're in the right place.
 
 ## Guide
 
