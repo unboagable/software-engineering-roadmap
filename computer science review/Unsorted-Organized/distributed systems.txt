@@ -1,0 +1,10 @@
+
+
+
+incomplete
+--Dynamic Host Configuration Protocol (DHCP) allows IP addresses to be assiged on a temporary or quasi-permant basis
+---DHCP is great for clients -- but not for servers: Servers need to have well-known addresses
+
+s:Sources
+-http://www.andrew.cmu.edu/course/15-440-f14/index/lecture_index.html
+

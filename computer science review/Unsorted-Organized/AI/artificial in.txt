@@ -1,0 +1,10 @@
+AI
+
+
+alpha beta pruning
+
+
+
+NN
+
+-Markov chain
