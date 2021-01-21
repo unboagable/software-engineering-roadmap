@@ -48,7 +48,6 @@
 ## Advice and Tips
 
 * [picking a language to interview in](https://github.com/yangshun/tech-interview-handbook/blob/master/contents/picking-a-language.md)
-* [checklist right before the interview](https://github.com/yangshun/tech-interview-handbook/blob/master/contents/cheatsheet.md#before-interview)
 * spend a couple of hours research company culture, industry, and product
   * company's website, company's wikipedia article, [glassdoor reviews](https://www.glassdoor.com/Reviews/index.htm)
 * spend a couple days (2-3) studying the subject matter and CS fundamentals
@@ -60,6 +59,7 @@
 * line up interviews in rounds so you can pace yourself and improve
   * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
   * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
+* [checklist right before the interview](https://github.com/yangshun/tech-interview-handbook/blob/master/contents/cheatsheet.md#before-interview)
 * explore roles adjacent to software engineering
   * [Site Reliability Engineer](https://github.com/mxssl/sre-interview-prep-guide)
   * [Data Scientist](https://github.com/MrMimic/data-scientist-roadmap#data-scientist-roadmap)
