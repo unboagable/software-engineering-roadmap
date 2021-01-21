@@ -9,9 +9,7 @@
 
 * coding
 * algorithm design and analysis
-  * Big O notation
 * [system design](https://github.com/checkcheckzz/system-design-interview#table-of-contents)
-  * system design isn't always covered but it's become more standard in SWE interviews and an important part of software development
 * [open-ended discussion (behavioral)](https://github.com/unboagable/software-engineering-roadmap/blob/master/interview%20prep/Behavioral%20Interview.md)
   * professional background and history
     * projects you've contributed to, the impact they had, the technologies you used/leveraged
