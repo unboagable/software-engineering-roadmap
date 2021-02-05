@@ -5,6 +5,7 @@
 * [pramp](https://www.pramp.com/#/), free peer to peer mock interview service
 * [leetcode](https://leetcode.com/problemset/all/), coding question with varying difficultly and built in ide, testing, and automated grading
   * [more practice questions by company](https://github.com/twowaits/SDE-Interview-Questions)
+* [hackerrank](https://www.hackerrank.com/) similar to leetcode
 
 ## Interview Topics
 
@@ -59,7 +60,7 @@
 * spend a week or 2 practicing problems and practicing mock interviews
 * line up interviews in rounds so you can pace yourself and improve
   * line up easier or companies your less interested in earlier so you can build momentum and confidence for the interviews you really care about
-  * practice while applying then set interviews 2-3 weeks outs to study and get in the zone
+  * practice while applying then set interviews 2-3 weeks out to study and get in the zone
 * [checklist right before the interview](https://github.com/yangshun/tech-interview-handbook/blob/master/contents/cheatsheet.md#before-interview)
 * explore roles adjacent to software engineering
   * [Site Reliability Engineer](https://github.com/mxssl/sre-interview-prep-guide)
