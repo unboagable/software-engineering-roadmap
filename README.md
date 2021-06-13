@@ -19,3 +19,7 @@
 ## [Development Cycle](https://github.com/unboagable/software-engineering-roadmap/blob/master/Development%20Cycle.md)
 
 * [tools](https://github.com/unboagable/software-engineering-roadmap/blob/master/Development%20Cycle.md#tools)
+* [good practices](https://github.com/unboagable/software-engineering-roadmap/blob/master/Development%20Cycle.md#good-practices)
+* [starting projects](https://github.com/unboagable/software-engineering-roadmap/blob/master/Development%20Cycle.md#starting-projects)
+
+## Feel free to contribute
