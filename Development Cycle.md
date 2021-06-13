@@ -21,14 +21,18 @@
 * write clean code
   * [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
   * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction)
+
+## Starting Projects
+
 * understand the code base
   * [picking up a new code base](https://medium.com/@benjamin.d.johnson/learning-a-new-codebase-the-good-the-bad-and-the-ugly-3617c044a873)
+  * read the code, look at unit tests, line trace, and edit lines
+
+## Debugging
+
+* [stack overflow](www.stackoverflow.com)
 
 ## Advanced Tools
 
 * platform as a service (PaaS)
   * [Docker](https://github.com/veggiemonk/awesome-docker#readme)
-  
-## Debugging
-
-* [stack overflow](www.stackoverflow.com)
