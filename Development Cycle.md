@@ -20,7 +20,9 @@
   * [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
 * writing clean code
   * [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
-  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction) 
+  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction)
+* understanding the code base
+  * [picking up a new code base](https://medium.com/@benjamin.d.johnson/learning-a-new-codebase-the-good-the-bad-and-the-ugly-3617c044a873)
 
 ## Advanced Tools
 
