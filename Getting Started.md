@@ -44,6 +44,12 @@ If you are curious about...
 
 * [free programming books](https://github.com/EbookFoundation/free-programming-books#readme)
 
+## Entry Level
+
+* middle school
+** [html code monster exercise](https://www.crunchzilla.com/code-monster)
+
+
 ## Notes
 
 * [computer science review notes](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Computer%20Science%20Review.md)
