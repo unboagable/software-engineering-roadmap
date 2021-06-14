@@ -47,7 +47,7 @@ If you are curious about...
 ## Entry Level
 
 * middle school
-** [html code monster exercise](https://www.crunchzilla.com/code-monster)
+  * [html code monster exercise](https://www.crunchzilla.com/code-monster)
 
 
 ## Notes
