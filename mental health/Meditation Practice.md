@@ -1,47 +1,45 @@
-# STEP 1
+# Step 1
 
-simplify thing you are focusing on
-simplify your mediation practice on things that inspire you
-simplify your meditation practice with things you enjoy
--meditation matt
--plants
--incense
--smells
--music
--weed
+* simplify thing you are focusing on
+* simplify your mediation practice on things that inspire you
+* simplify your meditation practice with things you enjoy
+  * meditation matt
+  * plants
+  * incense
+  * smells
+  * music
+  * weed
 
-# STEP 2
+# Step 2
 
-focus on breathing
--find silence
-go through senses
--trading
--health check
+* focus on breathing
+  * find silence
+* go through senses
+  * trading
+  * health check
 
-# STEP 3
+# Step 3
 
-yoga
+* yoga
+* explore 
+  * what can you hear
+  * what can you sense?
+  * different parts of your body feel
+* connect
+  * memories
 
-explore
--what can you hear
--what can you sense?
--different parts of your body feel
+# Step 4
 
-connect
--memories
+* tree jumping things
 
-# STEP 4
+# Helpful tips
 
-tree jumping things
+* plentiful diet
+* healthy diet
+* exercise
 
-# HELPFUL
+# Other Practice
 
-plentiful diet
-healthy diet
-exercise
-
-# OTHER PRACTICES
-
-wim hoff meditation (30 inhalation/exhalation-> 1 min no air->cold shower)
+* wim hoff meditation (30 inhalation/exhalation-> 1 min no air->cold shower)
 
 
