@@ -27,7 +27,7 @@
   * different parts of your body feel
 * connect
   * memories
-
+ 
 # Step 4
 
 * tree jumping things
@@ -40,6 +40,6 @@
 
 # Other Practice
 
-* wim hoff meditation (30 inhalation/exhalation-> 1 min no air->cold shower)
+* wim hoff meditation (30 inhalation/exhalation-> 1 min hold your breathe->cold shower)
 
 
