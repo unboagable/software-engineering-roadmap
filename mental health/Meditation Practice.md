@@ -1,4 +1,6 @@
-# Step 1
+# Meditation Practice
+
+## Step 1
 
 * simplify thing you are focusing on
 * simplify your mediation practice on things that inspire you
@@ -10,7 +12,7 @@
   * music
   * weed
 
-# Step 2
+## Step 2
 
 * focus on breathing
   * find silence
@@ -18,7 +20,7 @@
   * trading
   * health check
 
-# Step 3
+## Step 3
 
 * yoga
 * explore 
@@ -28,17 +30,17 @@
 * connect
   * memories
  
-# Step 4
+## Step 4
 
 * tree jumping things
 
-# Helpful tips
+## Helpful tips
 
 * plentiful diet
 * healthy diet
 * exercise
 
-# Other Practice
+## Other Practice
 
 * wim hoff meditation (30 inhalation/exhalation-> 1 min hold your breathe->cold shower)
 
