@@ -27,4 +27,4 @@
 * [github learning lab](https://lab.github.com/)
 * [github graphics topic](https://github.com/topics/graphics)
 
-## [Meditation Practice](https://github.com/unboagable/software-engineering-roadmap/blob/master/mental%20health/Meditation%20Practice.md)
+## [Meditation Practice](https://github.com/unboagable/meditation-practice/blob/main/Meditation%20Practice.md#meditation-practice)
