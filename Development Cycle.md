@@ -36,9 +36,3 @@
 
 * platform as a service (PaaS)
   * [Docker](https://github.com/veggiemonk/awesome-docker#readme)
-
-## Good Work Hygiene
-
-* take care of your mental health
-* keep healthy hobbies to get outside of work
-* have a portion of you day productively playful
