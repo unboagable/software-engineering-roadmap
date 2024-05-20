@@ -1,5 +1,15 @@
 # Development Cycle
 
+## Good Practices
+
+* plan, design, iterate, and document
+  * [commit messages](https://chris.beams.io/posts/git-commit/)
+  * [design documents](https://www.industrialempathy.com/posts/design-docs-at-google/)
+  * [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
+* write clean code
+  * [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
+  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction)
+
 ## Tools
 
 * [text editor](https://github.com/sindresorhus/awesome#editors)
@@ -11,16 +21,6 @@
   * [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 * distributed version control system
   * [Git](https://github.com/tiimgreen/github-cheat-sheet#github-cheat-sheet-)
-
-## Good Practices
-
-* plan, design, iterate, and document
-  * [commit messages](https://chris.beams.io/posts/git-commit/)
-  * [design documents](https://www.industrialempathy.com/posts/design-docs-at-google/)
-  * [code reviews](https://github.com/google/eng-practices/blob/master/review/reviewer/comments.md)
-* write clean code
-  * [naming convention](https://github.com/kettanaito/naming-cheatsheet#naming-cheatsheet)
-  * [java style guide](https://google.github.io/styleguide/javaguide.html#s1-introduction)
 
 ## Starting a Project
 
