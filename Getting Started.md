@@ -13,7 +13,7 @@ Are you curious about
 
 ## Guide
 
-* take courses, a good place to start are the [courses](https://github.com/unboagable/software-engineering-roadmap/blob/master/Getting%20Started.md#courses)
+* take courses, a good place to start are the [courses](https://github.com/unboagable/software-engineering-roadmap/blob/master/Getting%20Started.md#courses) or this [roadmap](https://roadmap.sh/)
     * ideally you need a class in data structures, algorithms, and a programming class
     * try coding data structures, algorithms, or experiment with the concepts yourself
 * [coding interview university](https://github.com/jwasham/coding-interview-university#coding-interview-university)
