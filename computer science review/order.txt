@@ -1,7 +1,7 @@
 title
 general
 discrete math
-primitives
+primitives-updated
 Big-O Cheat Sheet
 data structures
 algorithms

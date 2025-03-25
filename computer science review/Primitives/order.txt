@@ -1,5 +1,5 @@
 gereral(primitives)
 pointers
 ints
-bit manipulation
+bit manipulation-updated
 arrays
