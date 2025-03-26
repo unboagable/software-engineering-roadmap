@@ -20,17 +20,15 @@
 
 [Linked Lists](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Linked%20Lists/Linked%20Lists.md)
 
-[Queue](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Queues/Queues.md)
+[Queues](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Queues/Queues.md)
 
 [Stacks](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Stacks/Stacks.md)
 
-[Hash Table](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Hash%20Tables/Hash%20Tables.md)
+[Hash Tables](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Hash%20Tables/Hash%20Tables.md)
 
 [Dictionary/Map](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Dictionary-Map/Dictionary%20-%20Map.md)
 
 [Trees](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/Trees/Trees.md)
-
-Graph
 
 [General(Data Structures)](https://github.com/unboagable/software-engineering-roadmap/blob/master/computer%20science%20review/Data%20Structures/General(Data%20Structures)/General(Data%20Structures).md)
 
