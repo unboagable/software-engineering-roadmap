@@ -1,0 +1,28 @@
+# OS clutter
+.DS_Store
+**/.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.bbl
+*.blg
+*.bcf
+*.run.xml
