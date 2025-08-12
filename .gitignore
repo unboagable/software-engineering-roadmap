@@ -26,3 +26,6 @@ __MACOSX/
 *.blg
 *.bcf
 *.run.xml
+
+# Generated PDFs inside LaTeX src directories
+**/src/*.pdf
